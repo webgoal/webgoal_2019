@@ -1,5 +1,5 @@
 <template>
-  <header class="flex flex-col items-center container mx-auto px-2">
+  <header class="fixed flex flex-col items-center container mx-auto px-2">
     <Logo />
     <Navbar />
   </header>
