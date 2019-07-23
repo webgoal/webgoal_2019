@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Navbar />
+    <Header />
     <div class="container">
       <p>narf</p>
     </div>
@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import Navbar from '~/components/navbar'
+import Header from '~/components/Header'
 
 export default {
   name: 'Home',
   components: {
-    Navbar
+    Header
   }
 }
 </script>
