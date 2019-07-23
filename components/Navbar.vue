@@ -1,9 +1,10 @@
 <template>
-  <nav>
+  <nav class="ml-auto">
     <a
       v-for="link in navbarList"
       :key="link.name"
       :href="link.url"
+      class="px-1 md:px-12"
       :class="link.classes"
     >
       {{ link.name }}
@@ -17,11 +18,6 @@ export default {
   data() {
     return {
       navbarList: [
-        {
-          name: 'Home',
-          url: '#',
-          classes: 'sm:inline-block'
-        },
         {
           name: 'Negócios',
           url: '#',
