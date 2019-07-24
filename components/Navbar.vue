@@ -4,7 +4,7 @@
       v-for="link in navbarList"
       :key="link.name"
       :href="link.url"
-      class="px-1 md:px-12"
+      class="px-1 md:px-4 text-white"
       :class="link.classes"
     >
       {{ link.name }}

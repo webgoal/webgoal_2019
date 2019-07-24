@@ -1,7 +1,11 @@
 <template>
-  <header class="fixed flex flex-col items-center container mx-auto px-2">
-    <Logo />
-    <Navbar />
+  <header class="fixed items-center px-2 justify-center w-full">
+    <div
+      class="container mx-auto items-center flex flex-col md:flex-row md:justify-between"
+    >
+      <Logo />
+      <Navbar />
+    </div>
   </header>
 </template>
 
