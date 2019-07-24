@@ -1,6 +1,7 @@
 <template>
-  <h1 class="text-7xl">
-    <span class="text-4xl">{{ subTitle }}</span> {{ title }}
+  <h1 class="text-7xl text-blue-400">
+    <span class="text-4xl block text-black">{{ subTitle }}</span>
+    {{ title }}
   </h1>
 </template>
 
