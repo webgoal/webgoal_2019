@@ -8,6 +8,7 @@
       <Content
         content="Todas as empresas do grupo Webgoal adotam uma gestão orgânica, baseada na democracia e pautada em relações de confiança entre as pessoas. Hierarquias formais, comando e controle são substituídos por autonomia, colaboração e liderança emergente."
       />
+      <Button text="saiba mais" />
     </div>
   </section>
 </template>
@@ -18,6 +19,7 @@ import HomeHero from '~/components/HomeHero'
 import Title from '~/components/Title'
 import SubTitle from '~/components/SubTitle'
 import Content from '~/components/Content'
+import Button from '~/components/Button'
 
 export default {
   name: 'Home',
@@ -26,7 +28,8 @@ export default {
     HomeHero,
     Title,
     SubTitle,
-    Content
+    Content,
+    Button
   }
 }
 </script>
