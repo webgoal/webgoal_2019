@@ -5,6 +5,9 @@
     <div class="container">
       <Title sub-title="estilo de" title="gestão" />
       <SubTitle sub-title="Gestão centrada nas pessoas" />
+      <Content
+        content="Todas as empresas do grupo Webgoal adotam uma gestão orgânica, baseada na democracia e pautada em relações de confiança entre as pessoas. Hierarquias formais, comando e controle são substituídos por autonomia, colaboração e liderança emergente."
+      />
     </div>
   </section>
 </template>
@@ -14,6 +17,7 @@ import Header from '~/components/Header'
 import HomeHero from '~/components/HomeHero'
 import Title from '~/components/Title'
 import SubTitle from '~/components/SubTitle'
+import Content from '~/components/Content'
 
 export default {
   name: 'Home',
@@ -21,7 +25,8 @@ export default {
     Header,
     HomeHero,
     Title,
-    SubTitle
+    SubTitle,
+    Content
   }
 }
 </script>
