@@ -1,6 +1,8 @@
 <template>
-  <h1 class="text-7xl text-blue-400">
-    <span class="text-4xl block text-black">{{ smallTitle }}</span>
+  <h1 class="text-7xl text-lightBlue font-black leading-none inline-block">
+    <span class="text-4xl block text-black font-hairline text-left">
+      {{ smallTitle }}
+    </span>
     {{ title }}
   </h1>
 </template>

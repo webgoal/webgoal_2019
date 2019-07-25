@@ -14,5 +14,4 @@
     }
   ],
   "prettier.eslintIntegration": true,
-  "eslint.autoFixOnSave": true
 }

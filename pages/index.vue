@@ -2,15 +2,17 @@
   <section>
     <Header />
     <HomeHero />
-    <div>
+    <div class="container flex flex-row">
       <Card
+        class="w-1/2"
         small-title="estilo de"
-        title="gestão"
+        title="GESTÃO"
         sub-title="Gestão centrada nas pessoas."
         content="Todas as empresas do grupo Webgoal adotam uma gestão orgânica, baseada na democracia e pautada em relações de confiança entre as pessoas. Hierarquias formais, comando e controle são substituídos por autonomia, colaboração e liderança emergente."
         button-text="saiba mais"
       />
       <VideoImage
+        class="w-1/2"
         url="www.google.com"
         :source="require('~/assets/images/video-image.png')"
         description="Webgoal Video"

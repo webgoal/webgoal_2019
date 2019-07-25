@@ -1,5 +1,5 @@
 <template>
-  <p>{{ content }}</p>
+  <p class="leading-relaxed text-black">{{ content }}</p>
 </template>
 
 <script>

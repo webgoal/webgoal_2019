@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-2xl text-yellow-500">
+  <h2 class="text-2xl text-yellow">
     {{ subTitle }}
   </h2>
 </template>

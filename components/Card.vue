@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="text-right">
     <Title :small-title="smallTitle" :title="title" />
     <SubTitle :sub-title="subTitle" />
     <CardContent :content="content" />
