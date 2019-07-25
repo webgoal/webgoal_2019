@@ -2,9 +2,9 @@
   <section>
     <Header />
     <HomeHero />
-    <div class="container flex flex-row">
+    <div class="container flex flex-row py-10">
       <Card
-        class="w-1/2"
+        class="md:w-6/12 pr-6 w-full"
         small-title="estilo de"
         title="GESTÃO"
         sub-title="Gestão centrada nas pessoas."
@@ -12,18 +12,18 @@
         button-text="saiba mais"
       />
       <VideoImage
-        class="w-1/2"
-        url="www.google.com"
+        class="md:w-7/12 -mt-24 hidden md:inline-block"
+        url="#"
         :source="require('~/assets/images/video-image.png')"
         description="Webgoal Video"
       />
-      <div class="container flex ">
-        <div class="px-2">
-          <BlogCard />
-        </div>
-        <div class="px-2">
-          <BlogCard />
-        </div>
+    </div>
+    <div class="container flex flex-wrap">
+      <div class="px-2">
+        <BlogCard />
+      </div>
+      <div class="px-2">
+        <BlogCard />
       </div>
     </div>
   </section>
