@@ -1,6 +1,6 @@
 <template>
   <h1 class="text-7xl text-blue-400">
-    <span class="text-4xl block text-black">{{ subTitle }}</span>
+    <span class="text-4xl block text-black">{{ smallTitle }}</span>
     {{ title }}
   </h1>
 </template>
@@ -9,7 +9,7 @@
 export default {
   name: 'Title',
   props: {
-    subTitle: {
+    smallTitle: {
       type: String,
       default: ''
     },
