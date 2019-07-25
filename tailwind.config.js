@@ -8,7 +8,17 @@ module.exports = {
       sans: ['museo-sans', ...defaultTheme.fontFamily.sans]
     },
     fontSize: { ...defaultTheme.fontSize, '7xl': '5rem' },
-    extend: {},
+    extend: {
+      colors: {
+        colors: {
+          white: '#ffffff',
+          black: '#000000',
+          yellow: '#febd32',
+          lightBlue: '#00b8d7',
+          lightGray: '#f8f8f8'
+        }
+      }
+    },
     container: {
       center: true,
       padding: '1rem'
