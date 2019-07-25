@@ -10,13 +10,11 @@ module.exports = {
     fontSize: { ...defaultTheme.fontSize, '7xl': '5rem' },
     extend: {
       colors: {
-        colors: {
-          white: '#ffffff',
-          black: '#000000',
-          yellow: '#febd32',
-          lightBlue: '#00b8d7',
-          lightGray: '#f8f8f8'
-        }
+        white: '#ffffff',
+        black: '#000000',
+        yellow: '#febd32',
+        lightBlue: '#00b8d7',
+        lightGray: '#f8f8f8'
       }
     },
     container: {

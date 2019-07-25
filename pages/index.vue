@@ -17,6 +17,14 @@
         :source="require('~/assets/images/video-image.png')"
         description="Webgoal Video"
       />
+      <div class="container flex ">
+        <div class="px-2">
+          <BlogCard />
+        </div>
+        <div class="px-2">
+          <BlogCard />
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -24,6 +32,7 @@
 <script>
 import Header from '~/components/Header'
 import HomeHero from '~/components/HomeHero'
+import BlogCard from '~/components/BlogCard'
 import Card from '~/components/Card'
 import VideoImage from '~/components/VideoImage'
 
@@ -33,7 +42,8 @@ export default {
     Header,
     HomeHero,
     Card,
-    VideoImage
+    VideoImage,
+    BlogCard
   }
 }
 </script>
