@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Content',
+  name: 'CardContent',
   props: {
     content: {
       type: String,

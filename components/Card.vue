@@ -2,14 +2,14 @@
   <div class="container">
     <Title :small-title="smallTitle" :title="title" />
     <SubTitle :sub-title="subTitle" />
-    <Content :content="content" />
+    <CardContent :content="content" />
     <Button :text="buttonText" />
   </div>
 </template>
 <script>
 import Title from '~/components/Title'
 import SubTitle from '~/components/SubTitle'
-import Content from '~/components/Content'
+import CardContent from '~/components/CardContent'
 import Button from '~/components/Button'
 
 export default {
@@ -17,7 +17,7 @@ export default {
   components: {
     Title,
     SubTitle,
-    Content,
+    CardContent,
     Button
   },
   props: {
