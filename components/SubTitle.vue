@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-2xl text-yellow pt-1 pb-2">
+  <h2 class="text-2xl pt-1 pb-2" :class="color">
     {{ subTitle }}
   </h2>
 </template>
@@ -11,6 +11,10 @@ export default {
     subTitle: {
       type: String,
       default: ''
+    },
+    color: {
+      type: String,
+      default: 'text-yellow'
     }
   }
 }

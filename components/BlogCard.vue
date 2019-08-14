@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col px-4 bg-lightGray rounded mt-20">
+  <div class="flex flex-col px-4 bg-lightGray rounded mt-20 mb-10">
     <header class="-mt-10">
       <img :src="imageUrl" class="rounded shadow-xl mb-20" :alt="imageAlt">
       <h2 class="px-12 pb-12 text-4xl font-black">

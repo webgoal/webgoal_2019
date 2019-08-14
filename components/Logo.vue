@@ -5,14 +5,6 @@
 <script>
 export default {
   name: 'Logo',
-  computed: {
-    logoColor() {
-      const { dark } = this
-      let color = '#ffffff'
-      if (dark) color = '#494949'
-      return color
-    }
-  },
   props: {
     widthClass: {
       type: String,
@@ -21,6 +13,14 @@ export default {
     dark: {
       type: Boolean,
       default: false
+    }
+  },
+  computed: {
+    logoColor() {
+      const { dark } = this
+      let color = '#ffffff'
+      if (dark) color = '#494949'
+      return color
     }
   }
 }

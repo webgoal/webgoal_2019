@@ -18,6 +18,13 @@
         description="Webgoal Video"
       />
     </div>
+
+    <div class="container">
+      <Title small-title="Nossos" title="Negócios" class="mb-10" />
+      <SubTitle color="text-gray" sub-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " />
+      <Button text="Saiba Mais" />
+    </div>
+
     <div class="container flex flex-wrap">
       <div class="px-2">
         <BlogCard />
@@ -35,6 +42,9 @@ import HomeHero from '~/components/HomeHero'
 import BlogCard from '~/components/BlogCard'
 import Card from '~/components/Card'
 import VideoImage from '~/components/VideoImage'
+import Title from '~/components/Title'
+import SubTitle from '~/components/SubTitle'
+import Button from '~/components/Button'
 
 export default {
   name: 'Home',
@@ -43,7 +53,10 @@ export default {
     HomeHero,
     Card,
     VideoImage,
-    BlogCard
+    BlogCard,
+    Title,
+    SubTitle,
+    Button
   }
 }
 </script>

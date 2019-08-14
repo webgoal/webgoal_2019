@@ -1,6 +1,6 @@
 <template>
   <a :href="url">
-    <img :src="source" :alt="description" class="w-auto" />
+    <img :src="source" :alt="description" class="w-auto">
   </a>
 </template>
 

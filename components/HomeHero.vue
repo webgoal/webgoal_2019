@@ -6,7 +6,7 @@
       src="~/assets/images/logo-white.png"
       alt="Logo Webgoal"
       class="w-auto"
-    />
+    >
     <p class="font-serif leading-none text-white text-4xl max-w-xs">
       Negócios que tornam pessoas melhores.
     </p>
