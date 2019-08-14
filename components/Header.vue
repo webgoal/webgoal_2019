@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed items-center px-2 justify-center w-full">
+  <header class="absolute items-center px-2 justify-center w-full">
     <div
       class="container items-center flex flex-col md:flex-row md:justify-between"
     >
