@@ -4,8 +4,8 @@
       v-for="link in navbarList"
       :key="link.name"
       :href="link.url"
-      class="px-1 md:px-4 text-white"
-      :class="link.classes"
+      class="px-1 md:px-4"
+      :class="`${link.classes} ${textColor}`"
     >
       {{ link.name }}
     </a>
@@ -15,6 +15,12 @@
 <script>
 export default {
   name: 'Navbar',
+  props: {
+    dark: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       navbarList: [
@@ -44,6 +50,14 @@ export default {
           classes: 'sm:inline-block'
         }
       ]
+    }
+  },
+  computed: {
+    textColor() {
+      const { dark } = this
+      let className = 'text-white'
+      if (dark) className = 'text-black'
+      return className
     }
   }
 }

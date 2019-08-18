@@ -1,10 +1,10 @@
 <template>
-  <header class="absolute items-center px-2 justify-center w-full">
+  <header class="items-center px-2 justify-center w-full" :class="[absolute ? 'absolute' : 'relative']">
     <div
       class="container items-center flex flex-col md:flex-row md:justify-between"
     >
-      <Logo />
-      <Navbar />
+      <Logo :dark="dark" />
+      <Navbar :dark="dark" />
     </div>
   </header>
 </template>
@@ -18,6 +18,16 @@ export default {
   components: {
     Logo,
     Navbar
+  },
+  props: {
+    dark: {
+      type: Boolean,
+      default: false
+    },
+    absolute: {
+      type: Boolean,
+      default: true
+    }
   }
 }
 </script>
