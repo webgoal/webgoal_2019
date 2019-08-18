@@ -54,6 +54,21 @@
         </div>
       </div>
     </div>
+
+    <div class="container py-16">
+      <Title title="Novidades" class="mb-4" />
+      <div class="flex flex-col">
+        <div>
+          <BlogCard />
+        </div>
+        <div>
+          <BlogCard />
+        </div>
+        <div>
+          <BlogCard />
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -61,6 +76,7 @@
 import Header from '~/components/Header'
 import HomeHero from '~/components/HomeHero'
 import BlogSection from '~/components/BlogSection'
+import BlogCard from '~/components/BlogCard'
 import Card from '~/components/Card'
 import VideoImage from '~/components/VideoImage'
 import Title from '~/components/Title'
@@ -81,7 +97,8 @@ export default {
     SubTitle,
     Button,
     Testimonials,
-    OurNumbers
+    OurNumbers,
+    BlogCard
   }
 }
 </script>
