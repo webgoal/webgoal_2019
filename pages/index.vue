@@ -33,6 +33,27 @@
     </div>
 
     <OurNumbers />
+
+    <div class="container py-16">
+      <div>
+        <Title title="experiências" class="mb-4" />
+        <div>
+          <div>
+            <VideoImage
+              url="#"
+              :source="require('~/assets/images/video-image.png')"
+              description="Webgoal Video"
+            />
+          </div>
+          <div class="text-right">
+            <div class="py-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto, illo debitis eveniet repellat voluptatibus laborum vitae porro consectetur itaque expedita ex. Cupiditate rerum, vitae necessitatibus pariatur id hic corporis?</p>
+            </div>
+            <Button text="Saiba Mais" />
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
