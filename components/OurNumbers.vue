@@ -1,7 +1,7 @@
 <template>
   <div class="bg-yellow pt-12 pb-10">
     <div class="container">
-      <div class="flex flex-col items-center text-center">
+      <div class="flex flex-col items-center text-center md:flex-row md:justify-between">
         <div>
           <h2 class="text-5xl leading-none pb-10">
             nossos <span class="block font-bold">números</span>

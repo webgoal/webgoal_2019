@@ -35,17 +35,17 @@
     <OurNumbers />
 
     <div class="container py-16">
-      <div>
+      <div class="md:max-w-4xl mx-auto">
         <Title title="experiências" class="mb-4" />
-        <div>
-          <div>
+        <div class="md:flex md:flex-row-reverse">
+          <div class="md:w-7/12">
             <VideoImage
               url="#"
               :source="require('~/assets/images/video-image.png')"
               description="Webgoal Video"
             />
           </div>
-          <div class="text-right">
+          <div class="text-right md:w-5/12 md:pr-4">
             <div class="py-4">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto, illo debitis eveniet repellat voluptatibus laborum vitae porro consectetur itaque expedita ex. Cupiditate rerum, vitae necessitatibus pariatur id hic corporis?</p>
             </div>
@@ -56,16 +56,18 @@
     </div>
 
     <div class="container py-16">
-      <Title title="Novidades" class="mb-4" />
-      <div class="flex flex-col">
-        <div>
-          <BlogCard />
-        </div>
-        <div>
-          <BlogCard />
-        </div>
-        <div>
-          <BlogCard />
+      <div>
+        <Title title="Novidades" class="mb-4" />
+        <div class="flex flex-col md:flex-row">
+          <div class="mx-2">
+            <BlogCard />
+          </div>
+          <div class="mx-2">
+            <BlogCard />
+          </div>
+          <div class="mx-2">
+            <BlogCard />
+          </div>
         </div>
       </div>
     </div>
