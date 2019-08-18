@@ -26,7 +26,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css', 'swiper/dist/css/swiper.css'],
   /*
    ** Plugins to load before mounting the App
    */
