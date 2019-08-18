@@ -31,6 +31,8 @@
       <Title title="Depoimentos" class="mb-10" />
       <Testimonials />
     </div>
+
+    <OurNumbers />
   </section>
 </template>
 
@@ -44,6 +46,7 @@ import Title from '~/components/Title'
 import SubTitle from '~/components/SubTitle'
 import Button from '~/components/Button'
 import Testimonials from '~/components/Testimonials'
+import OurNumbers from '~/components/OurNumbers'
 
 export default {
   name: 'Home',
@@ -56,7 +59,8 @@ export default {
     Title,
     SubTitle,
     Button,
-    Testimonials
+    Testimonials,
+    OurNumbers
   }
 }
 </script>
