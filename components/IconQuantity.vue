@@ -1,6 +1,6 @@
 <template>
   <div class="text-center py-6 md:py-0">
-    <img class="my-auto inline-block" src="//placehold.it/80x80" alt="">
+    <img class="my-auto inline-block" :src="icon" alt="">
     <h2 class="text-5xl font-bold mt-4 mb-2 leading-none">
       {{ number }}
     </h2>

@@ -8,13 +8,19 @@
           </h2>
         </div>
         <div>
-          <IconQuantity />
+          <IconQuantity
+            :icon="require('~/assets/icons/rocket.svg')"
+          />
         </div>
         <div>
-          <IconQuantity />
+          <IconQuantity
+            :icon="require('~/assets/icons/oven.svg')"
+          />
         </div>
         <div>
-          <IconQuantity />
+          <IconQuantity
+            :icon="require('~/assets/icons/post-it.svg')"
+          />
         </div>
       </div>
     </div>
