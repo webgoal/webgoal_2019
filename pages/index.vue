@@ -25,13 +25,11 @@
       <Button text="Saiba Mais" />
     </div>
 
-    <div class="container flex flex-wrap">
-      <div class="px-2">
-        <BlogCard />
-      </div>
-      <div class="px-2">
-        <BlogCard />
-      </div>
+    <BlogSection />
+
+    <div class="container">
+      <Title title="Depoimentos" class="mb-10" />
+      <Testimonials />
     </div>
   </section>
 </template>
@@ -39,12 +37,13 @@
 <script>
 import Header from '~/components/Header'
 import HomeHero from '~/components/HomeHero'
-import BlogCard from '~/components/BlogCard'
+import BlogSection from '~/components/BlogSection'
 import Card from '~/components/Card'
 import VideoImage from '~/components/VideoImage'
 import Title from '~/components/Title'
 import SubTitle from '~/components/SubTitle'
 import Button from '~/components/Button'
+import Testimonials from '~/components/Testimonials'
 
 export default {
   name: 'Home',
@@ -53,10 +52,11 @@ export default {
     HomeHero,
     Card,
     VideoImage,
-    BlogCard,
+    BlogSection,
     Title,
     SubTitle,
-    Button
+    Button,
+    Testimonials
   }
 }
 </script>
