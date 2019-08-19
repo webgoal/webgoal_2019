@@ -26,11 +26,57 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container mb-40">
       <div class="flex flex-row flex-wrap -mx-4">
         <div v-for="(gridItem, index) in grid" :key="index" class="w-full px-4 flex justify-center items-center" :class="gridItem.size">
           <Avatar v-if="gridItem.type === 'image'" :image="gridItem.image" :title="gridItem.title" />
           <BlockQuote v-if="gridItem.type === 'blockquote'" :quote="gridItem.content" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="flex flex-row flex-wrap -mx-4">
+        <div class="w-full md:w-6/12 px-4">
+          <img src="//placehold.it/600x350" alt="">
+        </div>
+        <div class="w-full md:w-6/12 px-4 flex flex-col justify-center">
+          <h2 class="text-5xl font-black font-serif">
+            experiências
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="flex flex-col items-center text-center mt-20 mb-16">
+        <h3 class="font-black text-2xl mb-2">
+          Divida suas experiências com a gente
+        </h3>
+        <p class="font-lg">
+          trabalhe em uma das empresas do grupo
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="flex -mx-4">
+        <div class="flex flex-col justify-around items-center h-56 px-4">
+          <img src="//placehold.it/250x60" alt="">
+          <Button text="conheça as vagas" />
+        </div>
+        <div class="flex flex-col justify-around items-center h-56 px-4">
+          <img src="//placehold.it/250x60" alt="">
+          <Button text="conheça as vagas" />
+        </div>
+        <div class="flex flex-col justify-around items-center h-56 px-4">
+          <img src="//placehold.it/250x60" alt="">
+          <Button text="conheça as vagas" />
+        </div>
+        <div class="flex flex-col justify-around items-center h-56 px-4">
+          <img src="//placehold.it/250x60" alt="">
+          <Button text="conheça as vagas" />
         </div>
       </div>
     </div>
@@ -43,6 +89,7 @@ import Title from '~/components/Title'
 import BlockQuote from '~/components/BlockQuote'
 import IconCard from '~/components/IconCard'
 import Avatar from '~/components/Avatar'
+import Button from '~/components/Button'
 
 export default {
   name: 'Equipe',
@@ -51,7 +98,8 @@ export default {
     Title,
     BlockQuote,
     IconCard,
-    Avatar
+    Avatar,
+    Button
   },
   data() {
     return {

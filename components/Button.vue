@@ -1,5 +1,5 @@
 <template>
-  <a class="inline-block bg-yellow text-white rounded py-4 px-12 font-black" :href="url">
+  <a class="inline-block bg-yellow text-white rounded py-4 px-12 font-black whitespace-no-wrap" :href="url">
     {{ text }}
   </a>
 </template>
