@@ -1,0 +1,57 @@
+<template>
+  <footer class="bg-lightBlue">
+    <div class="container flex flex-row justify-around">
+      <Logo width-class="w-32" height="80" />
+      <p class="self-center text-white">
+        Todos os direitos reservados Webgoal 2019&trade;
+      </p>
+      <div class="flex flex-row">
+        <a
+          v-for="link in socialList"
+          :key="link.image"
+          :href="link.url"
+          class="p-2 self-center"
+        >
+          <img class="w-6" :src="link.image">
+        </a>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script>
+import Logo from '~/components/Logo'
+
+export default {
+  name: 'Footer',
+  components: {
+    Logo
+  },
+  data() {
+    return {
+      socialList: [
+        {
+          image: require('~/assets/images/facebook-logo-24.png'),
+          url: '#'
+        },
+        {
+          image: require('~/assets/images/youtube-logo-24.png'),
+          url: '#'
+        },
+        {
+          image: require('~/assets/images/twitter-logo-24.png'),
+          url: '#'
+        },
+        {
+          image: require('~/assets/images/linkedin-logo-24.png'),
+          url: '#'
+        },
+        {
+          image: require('~/assets/images/instagram-logo-24.png'),
+          url: '#'
+        }
+      ]
+    }
+  }
+}
+</script>
