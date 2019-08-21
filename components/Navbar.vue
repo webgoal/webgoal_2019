@@ -4,7 +4,7 @@
       v-for="link in navbarList"
       :key="link.name"
       :href="link.url"
-      class="px-1 md:px-4"
+      class="px-1 md:px-4 p-3"
       :class="`${link.classes} ${textColor}`"
     >
       {{ link.name }}
@@ -24,6 +24,16 @@ export default {
   data() {
     return {
       navbarList: [
+        {
+          name: 'Home',
+          url: '#',
+          classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
+        },
+        {
+          name: 'Cultura',
+          url: '#',
+          classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
+        },
         {
           name: 'Negócios',
           url: '#',
@@ -62,3 +72,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  a:hover {
+    border-bottom: 0.05rem solid #00b8d7;
+    margin-bottom: -0.05rem;
+  }
+</style>
