@@ -15,7 +15,8 @@ module.exports = {
         yellow: '#febd32',
         lightBlue: '#00b8d7',
         lightGray: '#f8f8f8',
-        gray: '#9f9f9f'
+        gray: '#9f9f9f',
+        darkBlue: '#008da5'
       }
     },
     container: {
