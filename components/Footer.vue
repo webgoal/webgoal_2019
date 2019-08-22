@@ -32,23 +32,23 @@ export default {
       socialList: [
         {
           image: require('~/assets/images/facebook-logo-24.png'),
-          url: '#'
+          url: 'https://www.facebook.com/webgoal'
         },
         {
           image: require('~/assets/images/youtube-logo-24.png'),
-          url: '#'
+          url: 'https://www.youtube.com/user/webgoal'
         },
         {
           image: require('~/assets/images/twitter-logo-24.png'),
-          url: '#'
+          url: 'https://twitter.com/webgoal'
         },
         {
           image: require('~/assets/images/linkedin-logo-24.png'),
-          url: '#'
+          url: 'https://pt.linkedin.com/company/webgoal'
         },
         {
           image: require('~/assets/images/instagram-logo-24.png'),
-          url: '#'
+          url: 'https://www.instagram.com/webgoal/'
         }
       ]
     }
