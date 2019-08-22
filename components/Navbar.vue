@@ -26,7 +26,7 @@ export default {
       navbarList: [
         {
           name: 'Home',
-          url: '#',
+          url: '/',
           classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
         },
         {
@@ -36,7 +36,7 @@ export default {
         },
         {
           name: 'Negócios',
-          url: '#',
+          url: '/negocios',
           classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
         },
         {
@@ -46,7 +46,7 @@ export default {
         },
         {
           name: 'História',
-          url: '#',
+          url: '/historia',
           classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
         },
         {
@@ -74,8 +74,11 @@ export default {
 </script>
 
 <style scoped>
+  a {
+    border-bottom: 0.1rem solid transparent;
+    transition: .5s;
+  }
   a:hover {
-    border-bottom: 0.05rem solid #00b8d7;
-    margin-bottom: -0.05rem;
+    border-bottom: 0.1rem solid #00b8d7;
   }
 </style>

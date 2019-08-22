@@ -71,6 +71,7 @@
         </div>
       </div>
     </div>
+    <Footer />
   </section>
 </template>
 
@@ -86,6 +87,7 @@ import SubTitle from '~/components/SubTitle'
 import Button from '~/components/Button'
 import Testimonials from '~/components/Testimonials'
 import OurNumbers from '~/components/OurNumbers'
+import Footer from '~/components/Footer'
 
 export default {
   name: 'Home',
@@ -100,7 +102,8 @@ export default {
     Button,
     Testimonials,
     OurNumbers,
-    BlogCard
+    BlogCard,
+    Footer
   }
 }
 </script>
