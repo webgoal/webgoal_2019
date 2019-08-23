@@ -1,7 +1,7 @@
 <template>
-  <header class="items-center px-2 justify-center w-full" :class="[absolute ? 'absolute' : 'relative']">
+  <header class="px-2 w-full" :class="[absolute ? 'absolute' : 'relative']">
     <div
-      class="container items-center flex flex-col md:flex-row md:justify-between"
+      class="container items-center flex justify-between"
     >
       <Logo :dark="dark" />
       <Navbar :dark="dark" />

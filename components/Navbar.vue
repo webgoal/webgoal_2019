@@ -1,14 +1,21 @@
 <template>
-  <nav class="ml-auto">
-    <a
-      v-for="link in navbarList"
-      :key="link.name"
-      :href="link.url"
-      class="px-1 md:px-4 p-3"
-      :class="`${link.classes} ${textColor}`"
-    >
-      {{ link.name }}
-    </a>
+  <nav>
+    <div class="block md:hidden">
+      <button :class="`${textColor} ${borderColor} hover:${textColor}`" class="flex items-center px-3 py-2 border rounded focus:outline-none" @click="toggle">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
+      </button>
+    </div>
+    <div :class="open ? 'flex flex-col': 'hidden'" class="md:flex">
+      <a
+        v-for="link in navbarList"
+        :key="link.name"
+        :href="link.url"
+        class="px-1 md:px-4 p-0 md:p-3"
+        :class="`${textColor}`"
+      >
+        {{ link.name }}
+      </a>
+    </div>
   </nav>
 </template>
 
@@ -23,41 +30,35 @@ export default {
   },
   data() {
     return {
+      open: false,
       navbarList: [
         {
           name: 'Home',
-          url: '/',
-          classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
+          url: '/'
         },
         {
           name: 'Cultura',
-          url: '#',
-          classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
+          url: '#'
         },
         {
           name: 'Negócios',
-          url: '/negocios',
-          classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
+          url: '/negocios'
         },
         {
           name: 'Experiências',
-          url: '#',
-          classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
+          url: '#'
         },
         {
           name: 'História',
-          url: '/historia',
-          classes: 'hidden md:inline-block lg-inline-block xl-inline-block'
+          url: '/historia'
         },
         {
           name: 'Blog',
-          url: '#',
-          classes: 'sm:inline-block'
+          url: '#'
         },
         {
           name: 'Contato',
-          url: '#',
-          classes: 'sm:inline-block'
+          url: '#'
         }
       ]
     }
@@ -68,6 +69,17 @@ export default {
       let className = 'text-white'
       if (dark) className = 'text-black'
       return className
+    },
+    borderColor() {
+      const { dark } = this
+      let className = 'border-white'
+      if (dark) className = 'border-black'
+      return className
+    }
+  },
+  methods: {
+    toggle() {
+      this.open = !this.open
     }
   }
 }
