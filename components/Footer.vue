@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-lightBlue">
-    <div class="container flex flex-row justify-around">
+    <div class="container flex flex-col items-center md:flex-row md:justify-around">
       <Logo width-class="w-32" height="80" />
       <p class="self-center text-white">
         Todos os direitos reservados Webgoal 2019&trade;
