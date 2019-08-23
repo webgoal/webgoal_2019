@@ -11,6 +11,7 @@
           :key="link.image"
           :href="link.url"
           class="p-2 self-center"
+          target="_blank"
         >
           <img class="w-6" :src="link.image">
         </a>

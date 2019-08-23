@@ -2,11 +2,11 @@
   <div class="flex flex-col px-4 bg-lightGray rounded mt-20 mb-10 max-w-md w-full md:mb-32">
     <header class="-mt-10">
       <img :src="imageUrl" class="rounded shadow-xl mb-20" :alt="imageAlt">
-      <h2 class="px-6 md:px-12 pb-12 text-4xl font-black">
+      <h2 class="px-6 md:px-10 pb-12 text-4xl font-black">
         {{ title }}
       </h2>
     </header>
-    <div class="px-6 md:px-12">
+    <div class="px-6 md:px-10">
       <p>
         {{ content }}
       </p>
