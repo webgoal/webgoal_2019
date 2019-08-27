@@ -7,7 +7,7 @@
       </div>
       <Button class="m-auto" text="Saiba Mais" />
     </div>
-    <img class="mx-auto my-10" src="~/assets/images/working.png" alt="">
+    <img class="mx-auto my-10 p-3 lg:p-0" src="~/assets/images/working.png" alt="">
   </div>
 </template>
 
