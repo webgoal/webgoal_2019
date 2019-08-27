@@ -24,10 +24,10 @@
 import Header from '~/components/Header'
 import Title from '~/components/Title'
 import BlockQuote from '~/components/BlockQuote'
-import Granatum from '~/components/Granatum'
-import Atelie from '~/components/Atelie'
-import Floz from '~/components/Floz'
-import Lumiar from '~/components/Lumiar'
+import Granatum from '~/components/Companies/Granatum'
+import Atelie from '~/components/Companies/Atelie'
+import Floz from '~/components/Companies/Floz'
+import Lumiar from '~/components/Companies/Lumiar'
 import Footer from '~/components/Footer'
 
 export default {
