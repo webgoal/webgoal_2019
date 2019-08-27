@@ -4,20 +4,26 @@
       class="container items-center flex justify-between"
     >
       <Logo :dark="dark" />
-      <Navbar :dark="dark" />
+      <ButtonToggle :toggle="toggle" />
+      <Navbar :dark="dark"/>
     </div>
+    <transition name="slide">
+      <Navbar v-show="open" :dark="dark" :mobile="true" class="md:hidden navbar" />
+    </transition>
   </header>
 </template>
 
 <script>
 import Logo from '~/components/Logo'
 import Navbar from '~/components/Navbar'
+import ButtonToggle from '~/components/ButtonToggle'
 
 export default {
   name: 'Header',
   components: {
     Logo,
-    Navbar
+    Navbar,
+    ButtonToggle
   },
   props: {
     dark: {
@@ -28,6 +34,25 @@ export default {
       type: Boolean,
       default: true
     }
+  },
+  data() {
+    return {
+      open: false
+    }
+  },
+  methods: {
+    toggle() {
+      this.open = !this.open
+    }
   }
 }
 </script>
+<style scoped>
+  .navbar {
+    transform-origin: top;
+    transition: transform .4s ease-in-out;
+  }
+  .slide-enter, .slide-leave-to{
+    transform: scaleY(0);
+  }
+</style>
