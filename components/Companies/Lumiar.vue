@@ -1,12 +1,12 @@
 <template>
-  <div class="justify-center mx-auto p-10 flex flex-row">
-    <img class="mx-10" src="~/assets/images/Lumiar.png" alt="">
-    <div class="flex-start flex-col mr-16 my-auto">
-      <img src="~/assets/images/logo-lumiar.svg" alt="">
-      <div class="text-left pr-10 text-l my-10">
+  <div class="justify-center lg:justify-start mx-auto p-10 flex flex-col-reverse lg:flex-row">
+    <img class="mx-auto lg:mx-10" src="~/assets/images/Lumiar.png" alt="">
+    <div class="flex lg:flex-start flex-col mr-0 lg:mr-16 my-auto pb-6 lg:pb-0">
+      <img src="~/assets/images/logo-lumiar.svg" class="mx-auto w-56 lg:mx-0" alt="">
+      <div class="text-center lg:text-left pr-0 lg:pr-10 text-l my-10">
         Criamos soluções digitais para grandes empresas e startups, desenvolvendo software sob medida, utilizando métodos ágeis e aplicando técnicas avançadas de product discovery.
       </div>
-      <Button class="text-left text-l" text="Saiba Mais" />
+      <Button class="m-auto lg:my-auto lg:mr-auto lg:ml-0 text-left text-l" text="Saiba Mais" />
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@
 import Button from '~/components/Button'
 
 export default {
-  name: 'Atelie',
+  name: 'Lumiar',
   components: {
     Button
   }
