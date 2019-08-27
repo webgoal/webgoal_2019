@@ -2,7 +2,7 @@
   <section>
     <Header dark :absolute="false" />
 
-    <div class="container flex flex-row py-10 items-center">
+    <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 items-center">
       <div class="flex flex-col w-full pr-6">
         <VideoImage
           url="#"
@@ -18,17 +18,17 @@
       </div>
     </div>
 
-    <div class="container flex flex-row py-10 items-center">
+    <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 items-center">
       <div class="flex flex-col w-full pr-6">
-        <span class="text-right text-4xl font-bold">Antes, um grupo de amigos. Hoje, um grupo de empresas.</span>
+        <span class="text-left lg:text-right text-4xl font-bold">Antes, um grupo de amigos. Hoje, um grupo de empresas.</span>
       </div>
       <div class="flex flex-col w-full">
         <BlockQuote class="text-left" quote="Porque estou acordando toda manhã para ir trabalhar? O que me motiva? Um propósito muito maior do que apenas desenvolver software, queremos melhorar a vida dos clientes, não somente corrigir erros." />
       </div>
     </div>
 
-    <div class="container flex flex-row py-10">
-      <div class="text-right flex flex-col w-full pr-6 justify-center">
+    <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10">
+      <div class="text-left pb-8 lg:text-right flex flex-col w-full pr-6 justify-center">
         <span class="text-2xl">A região tinha potencial e poderíamos criar oportunidades de trabalho para que os profissionais de TI não precisassem ir para São Paulo. Buscávamos por mais qualidade de vida.</span>
         <span class="text-2xl">Felizes, chegamos então no Sul de Minas para iniciar uma unidade da Webgoal no ano de 2011.</span>
       </div>
@@ -49,9 +49,9 @@
       <CardContent content="Outro momento decisivo para nós foi o surgimento do Granatum Pessoal em 2009. Essa ferramenta gratuita era um controle financeiro online baseado no Webgoal Finanças, um software interno que criamos para fazer a gestão financeira da nossa empresa." />
     </div>
 
-    <div class="container flex flex-row py-10 items-center">
-      <div class="flex flex-col w-full pr-6">
-        <span>Decidimos ampliar o negócio de desenvolvimento de software sob medid, criando a marca Ateliê de Software. O nosso crescimento exigiu algumas mudanças. Tínhamos uma única pessoa jurídica, mas duas unidades de negócio bem distintas: Ateliê de Software e Granatum.</span>
+    <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 items-center">
+      <div class="flex flex-col w-full pr-6 text-left lg:text-right">
+        <span>Decidimos ampliar o negócio de desenvolvimento de software sob medida, criando a marca Ateliê de Software. O nosso crescimento exigiu algumas mudanças. Tínhamos uma única pessoa jurídica, mas duas unidades de negócio bem distintas: Ateliê de Software e Granatum.</span>
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
@@ -60,12 +60,12 @@
       </div>
     </div>
 
-    <div class="container flex flex-col py-10">
+    <div class="container flex flex-col py-10 items-center">
       <VideoImage
-            url="#"
-            :source="require('~/assets/images/lista-videos.png')"
-            description="Webgoal Video"
-          />
+        url="#"
+        :source="require('~/assets/images/lista-videos.png')"
+        description="Webgoal Video"
+      />
     </div>
 
     <Footer />
