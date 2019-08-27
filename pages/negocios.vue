@@ -3,15 +3,15 @@
     <Header dark :absolute="false" />
     <div class="container">
       <div class="flex flex-col items-center">
-        <div class="mr-64">
+        <div class="sm:mx-auto">
           <Title small-title="nossos" title="NEGÓCIOS" />
         </div>
-        <div class="w-2/5 text-xl ml-64">
+        <div class="w-auto lg:w-2/5 text-xl lg:ml-64">
           <BlockQuote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna." />
         </div>
       </div>
     </div>
-    <img class="mx-auto" src="~/assets/images/company.png" alt="">
+    <img class="mx-auto p-3 lg:p-0" src="~/assets/images/company.png" alt="">
     <Granatum />
     <Atelie />
     <Floz />
