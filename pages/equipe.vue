@@ -13,14 +13,14 @@
     </div>
 
     <div class="container">
-      <div class="flex flex-row flex-wrap -mx-4">
-        <div class="w-full md:w-4/12 px-4">
+      <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-4">
+        <div class="w-full lg:w-4/12 px-4">
           <IconCard :icon="require('~/assets/icons/hands.png')" icon-color="bg-lightBlue" title="Colaboração" />
         </div>
-        <div class="w-full md:w-4/12 px-4">
+        <div class="w-full lg:w-4/12 px-4">
           <IconCard :icon="require('~/assets/icons/business_man.png')" title="Autonomia" />
         </div>
-        <div class="w-full md:w-4/12 px-4">
+        <div class="w-full lg:w-4/12 px-4">
           <IconCard :icon="require('~/assets/icons/notepad.png')" icon-color="bg-darkBlue" title="Transparência" />
         </div>
       </div>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="container">
-      <div class="flex -mx-4">
+      <div class="flex flex-col pb-6 lg:flex-row lg:justify-center">
         <div class="flex flex-col justify-around items-center h-56 px-4">
           <img src="~/assets/images/logo-granatum.svg" alt="">
           <Button text="conheça as vagas" />
@@ -75,7 +75,7 @@
           <Button text="conheça as vagas" />
         </div>
         <div class="flex flex-col justify-around items-center h-56 px-4">
-          <img src="~/assets/images/logo-lumiar.svg" alt="">
+          <img src="~/assets/images/logo-lumiar.svg" class="img-lumiar" alt="">
           <Button text="conheça as vagas" />
         </div>
       </div>
@@ -363,3 +363,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .img-lumiar {
+    height: 120px;
+    margin-bottom: -25px;
+    margin-top: -35px;
+  }
+</style>>

@@ -42,7 +42,7 @@ export default {
         },
         {
           name: 'Experiências',
-          url: '#'
+          url: '/equipe'
         },
         {
           name: 'História',
