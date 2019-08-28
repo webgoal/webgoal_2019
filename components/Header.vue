@@ -4,8 +4,8 @@
       class="container items-center flex justify-between"
     >
       <Logo :dark="dark" />
-      <ButtonToggle :toggle="toggle" />
-      <Navbar :dark="dark"/>
+      <ButtonToggle :toggle="toggle" :dark="dark" />
+      <Navbar :dark="dark" />
     </div>
     <transition name="slide">
       <Navbar v-show="open" :dark="dark" :mobile="true" class="md:hidden navbar" />

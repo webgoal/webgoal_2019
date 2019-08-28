@@ -8,7 +8,28 @@
 <script>
 export default {
   props: {
-    toggle: Function
+    toggle: {
+      type: Function,
+      default: () => {}
+    },
+    dark: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    textColor() {
+      const { dark } = this
+      let className = 'text-white'
+      if (dark) className = 'text-black'
+      return className
+    },
+    borderColor() {
+      const { dark } = this
+      let className = 'border-white'
+      if (dark) className = 'border-black'
+      return className
+    }
   }
 }
 </script>
