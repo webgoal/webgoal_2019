@@ -2,7 +2,7 @@
   <section>
     <Header dark :absolute="false" />
     <div class="container">
-      <div class="flex flex-row mx-40 p-10">
+      <div class="flex flex-col lg:flex-row lg:mx-40 lg:p-10">
         <div class="w-full">
           <Title small-title="conheça nossa" title="EQUIPE" />
         </div>
