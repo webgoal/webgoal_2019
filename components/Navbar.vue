@@ -25,7 +25,7 @@ export default {
       default: false
     }
   },
-  data() {
+  data () {
     return {
       navbarList: [
         {
@@ -60,16 +60,16 @@ export default {
     }
   },
   computed: {
-    textColor() {
+    textColor () {
       const { dark } = this
       let className = 'text-white'
-      if (dark) className = 'text-black'
+      if (dark) { className = 'text-black' }
       return className
     },
-    borderColor() {
+    borderColor () {
       const { dark } = this
       let className = 'border-white'
-      if (dark) className = 'border-black'
+      if (dark) { className = 'border-black' }
       return className
     }
   }

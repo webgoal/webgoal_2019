@@ -24,10 +24,10 @@ export default {
     }
   },
   computed: {
-    logoColor() {
+    logoColor () {
       const { dark } = this
       let color = '#ffffff'
-      if (dark) color = '#494949'
+      if (dark) { color = '#494949' }
       return color
     }
   }

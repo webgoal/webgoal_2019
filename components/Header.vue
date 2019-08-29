@@ -35,13 +35,13 @@ export default {
       default: true
     }
   },
-  data() {
+  data () {
     return {
       open: false
     }
   },
   methods: {
-    toggle() {
+    toggle () {
       this.open = !this.open
     }
   }

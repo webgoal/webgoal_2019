@@ -28,7 +28,7 @@ export default {
   components: {
     Logo
   },
-  data() {
+  data () {
     return {
       socialList: [
         {

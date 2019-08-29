@@ -10,12 +10,12 @@
           <BlockQuote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna." />
         </div>
       </div>
+      <img class="mx-auto p-3 lg:p-0" src="~/assets/images/company.png" alt="">
+      <Granatum />
+      <Atelie />
+      <Floz />
+      <Lumiar />
     </div>
-    <img class="mx-auto p-3 lg:p-0" src="~/assets/images/company.png" alt="">
-    <Granatum />
-    <Atelie />
-    <Floz />
-    <Lumiar />
     <Footer />
   </section>
 </template>
@@ -41,10 +41,6 @@ export default {
     Floz,
     Lumiar,
     Footer
-  },
-  data() {
-    return {
-    }
   }
 }
 </script>

@@ -63,7 +63,7 @@ export default {
   components: {
     VideoImage
   },
-  data() {
+  data () {
     return {
       swiperOption: {
         navigation: {

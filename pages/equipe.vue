@@ -104,7 +104,7 @@ export default {
     Button,
     Footer
   },
-  data() {
+  data () {
     return {
       grid: [
         {
