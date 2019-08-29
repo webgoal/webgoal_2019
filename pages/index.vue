@@ -31,7 +31,7 @@
 
     <div class="container py-16">
       <div class="md:max-w-4xl mx-auto">
-        <Title title="experiências" class="mb-4" />
+        <Title title="Experiências" class="mb-4" />
         <div class="md:flex md:flex-row-reverse">
           <div class="md:w-7/12">
             <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
