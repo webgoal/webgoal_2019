@@ -12,5 +12,6 @@ module.exports = {
     'plugin:nuxt/recommended'
   ],
   rules: {
+    'vue/name-property-casing': 'off'
   }
 }

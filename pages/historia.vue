@@ -4,11 +4,7 @@
 
     <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 items-center">
       <div class="flex flex-col w-full pr-6">
-        <VideoImage
-          url="#"
-          :source="require('~/assets/images/nossa-historia.png')"
-          description="Webgoal Video"
-        />
+        <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
@@ -35,11 +31,7 @@
       <div class="flex flex-col w-full">
         <div class="text-left">
           <Title small-title="mas porque" title="poços de caldas" />
-          <VideoImage
-            url="#"
-            :source="require('~/assets/images/g-zuis.png')"
-            description="Webgoal Video"
-          />
+          <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
         </div>
       </div>
     </div>
@@ -61,11 +53,7 @@
     </div>
 
     <div class="container flex flex-col py-10 items-center">
-      <VideoImage
-        url="#"
-        :source="require('~/assets/images/lista-videos.png')"
-        description="Webgoal Video"
-      />
+      <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
     </div>
 
     <Footer />
@@ -78,7 +66,7 @@ import BlockQuote from '~/components/BlockQuote'
 import CardContent from '~/components/CardContent'
 import Footer from '~/components/Footer'
 import Header from '~/components/Header'
-import VideoImage from '~/components/VideoImage'
+import Video from '~/components/Video'
 
 export default {
   name: 'Historia',
@@ -88,7 +76,7 @@ export default {
     Title,
     Footer,
     Header,
-    VideoImage
+    Video
   }
 }
 </script>

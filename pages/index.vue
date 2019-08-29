@@ -11,12 +11,7 @@
         content="Todas as empresas do grupo Webgoal adotam uma gestão orgânica, baseada na democracia e pautada em relações de confiança entre as pessoas. Hierarquias formais, comando e controle são substituídos por autonomia, colaboração e liderança emergente."
         button-text="saiba mais"
       />
-      <VideoImage
-        class="md:w-7/12 -mt-24 hidden md:inline-block"
-        url="#"
-        :source="require('~/assets/images/video-image.png')"
-        description="Webgoal Video"
-      />
+      <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
     </div>
 
     <div class="container">
@@ -39,11 +34,7 @@
         <Title title="experiências" class="mb-4" />
         <div class="md:flex md:flex-row-reverse">
           <div class="md:w-7/12">
-            <VideoImage
-              url="#"
-              :source="require('~/assets/images/video-image.png')"
-              description="Webgoal Video"
-            />
+            <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
           </div>
           <div class="text-right md:w-5/12 md:pr-4">
             <div class="py-4">
@@ -81,7 +72,7 @@ import HomeHero from '~/components/HomeHero'
 import BlogSection from '~/components/BlogSection'
 import BlogCard from '~/components/BlogCard'
 import Card from '~/components/Card'
-import VideoImage from '~/components/VideoImage'
+import Video from '~/components/Video'
 import Title from '~/components/Title'
 import SubTitle from '~/components/SubTitle'
 import Button from '~/components/Button'
@@ -95,7 +86,7 @@ export default {
     Header,
     HomeHero,
     Card,
-    VideoImage,
+    Video,
     BlogSection,
     Title,
     SubTitle,

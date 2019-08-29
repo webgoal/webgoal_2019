@@ -5,7 +5,7 @@
         <div v-for="(slide, index) in slides" :key="index" class="swiper-slide">
           <div>
             <div>
-              <VideoImage source="//placehold.it/560x320" />
+              <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
             </div>
             <h1 class="text-lg md:text-2xl font-bold leading-none mt-3">
               {{ slide.name }}
@@ -56,12 +56,12 @@
 </style>
 
 <script>
-import VideoImage from '~/components/VideoImage'
+import Video from '~/components/Video'
 
 export default {
   name: 'Testimonials',
   components: {
-    VideoImage
+    Video
   },
   data () {
     return {

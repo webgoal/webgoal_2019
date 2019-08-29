@@ -33,10 +33,6 @@ export default {
           url: '/'
         },
         {
-          name: 'Cultura',
-          url: '#'
-        },
-        {
           name: 'Negócios',
           url: '/negocios'
         },
