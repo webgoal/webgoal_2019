@@ -15,13 +15,28 @@
     <div class="container">
       <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-4">
         <div class="w-full lg:w-4/12 px-4">
-          <IconCard :icon="require('~/assets/icons/hands.png')" icon-color="bg-lightBlue" title="Colaboração" />
+          <IconCard
+            :icon="require('~/assets/icons/hands.png')"
+            icon-color="bg-lightBlue"
+            title="Colaboração"
+            content="Colaborar significa fazer o trabalho junto com outras pessoas para criar novos aprendizados, aumentar a resiliência da equipe e ter qualidade no resultado final. A colaboração estimula a troca de conhecimentos e é a base do trabalho em equipe."
+          />
         </div>
         <div class="w-full lg:w-4/12 px-4">
-          <IconCard :icon="require('~/assets/icons/business_man.png')" title="Autonomia" />
+          <IconCard
+            :icon="require('~/assets/icons/business_man.png')"
+            title="Autonomia"
+            content="Ter autonomia significa fazer o trabalho que precisa ser feito da maneira que você acredita ser a melhor, considerando o impacto e as consequências dessa escolha na atuação das pessoas que trabalham com você, no nosso negócio e no negócio do cliente."
+          />
         </div>
         <div class="w-full lg:w-4/12 px-4">
-          <IconCard :icon="require('~/assets/icons/notepad.png')" icon-color="bg-darkBlue" title="Transparência" />
+          <IconCard
+            :icon="require('~/assets/icons/notepad.png')"
+            icon-color="bg-darkBlue"
+            title="Transparência"
+            content="É a correspondência entre o que realmente queremos e o que demonstramos, entre o que desejamos e o que manifestamos no mundo real. Significa revelar com maior ou menor clareza as intenções, os sentimentos e os pensamentos ocultos por trás de uma ação. A transparência diminui a frustração, facilita a convivência com
+o outro, favorece a autonomia, a colaboração e a auto-organização."
+          />
         </div>
       </div>
     </div>
