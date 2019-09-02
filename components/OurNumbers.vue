@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-yellow pt-12 pb-10">
+  <div class="numeros pt-12 pb-10">
     <div class="container">
       <div class="flex flex-col items-center text-center md:flex-row md:justify-between">
         <div>
@@ -10,16 +10,22 @@
         <div>
           <IconQuantity
             :icon="require('~/assets/icons/rocket.svg')"
+            text="nossos negócios"
+            number="04"
           />
         </div>
         <div>
           <IconQuantity
             :icon="require('~/assets/icons/oven.svg')"
+            text="no forno"
+            number="02"
           />
         </div>
         <div>
           <IconQuantity
             :icon="require('~/assets/icons/post-it.svg')"
+            text="post-it's"
+            number="999k"
           />
         </div>
       </div>
@@ -37,3 +43,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+  .numeros {
+    background: #febd32;
+    background-image: url(../assets/images/webgoal_pattern.svg);
+  }
+</style>

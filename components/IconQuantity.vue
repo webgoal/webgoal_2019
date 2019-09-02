@@ -19,8 +19,8 @@ export default {
       default: ''
     },
     number: {
-      type: Number,
-      default: 1
+      type: String,
+      default: '01'
     },
     text: {
       type: String,
