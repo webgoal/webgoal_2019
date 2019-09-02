@@ -4,7 +4,7 @@
     <div class="flex lg:flex-start flex-col mr-0 lg:mr-16 my-auto pb-6 lg:pb-0">
       <img src="~/assets/images/logo-lumiar.svg" class="mx-auto w-56 lg:mx-0" alt="">
       <div class="text-center lg:text-left pr-0 lg:pr-10 text-l my-10">
-        Criamos soluções digitais para grandes empresas e startups, desenvolvendo software sob medida, utilizando métodos ágeis e aplicando técnicas avançadas de product discovery.
+        Considerada umas das escolas mais inovadoras do mundo por utilizar uma metodologia de ensino-aprendizagem baseada no desenvolvimento de habilidades e competências a partir de projetos e grupos multietários.
       </div>
       <Button class="m-auto lg:my-auto lg:mr-auto lg:ml-0 text-left text-l" text="Saiba Mais" :url="link" target="_blank" />
     </div>
