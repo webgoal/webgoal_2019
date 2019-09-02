@@ -5,7 +5,7 @@
       <div class="text-left text-l my-auto py-3 md:py-0 md:pl-10 md:pr-4 sm:px-auto">
         Serviço online de gestão financeira sem complicação que proporciona inteligência financeira para empresas e startups.
       </div>
-      <Button class="m-auto" text="Saiba Mais" />
+      <Button class="m-auto" text="Saiba Mais" :url="link" target="_blank" />
     </div>
     <img class="mx-auto p-3" src="~/assets/images/working.png" alt="">
   </div>
@@ -18,6 +18,12 @@ export default {
   name: 'Granatum',
   components: {
     Button
+  },
+  props: {
+    link: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

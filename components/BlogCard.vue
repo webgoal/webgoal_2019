@@ -12,7 +12,7 @@
       </p>
     </div>
     <footer class="mt-12 -mb-5 flex justify-center">
-      <Button :url="link" />
+      <Button :url="link" target="_blank" />
     </footer>
   </div>
 </template>

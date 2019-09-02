@@ -9,15 +9,15 @@
         title="GESTÃO"
         sub-title="Gestão centrada nas pessoas."
         content="Todas as empresas do grupo Webgoal adotam uma gestão orgânica, baseada na democracia e pautada em relações de confiança entre as pessoas. Hierarquias formais, comando e controle são substituídos por autonomia, colaboração e liderança emergente."
-        button-text="saiba mais"
+        button-text="Saiba mais"
       />
       <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
     </div>
 
     <div class="container">
       <Title small-title="Nossos" title="Negócios" class="mb-10" />
-      <SubTitle color="text-gray" sub-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " />
-      <Button text="Saiba Mais" />
+      <SubTitle color="text-gray" sub-title="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
+      <Button text="Saiba Mais" url="/negocios" />
     </div>
 
     <BlogSection />
@@ -40,13 +40,13 @@
             <div class="py-4">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto, illo debitis eveniet repellat voluptatibus laborum vitae porro consectetur itaque expedita ex. Cupiditate rerum, vitae necessitatibus pariatur id hic corporis?</p>
             </div>
-            <Button text="Saiba Mais" />
+            <Button text="Saiba Mais" url="/equipe" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container py-16">
+    <div v-show="showNovidades" class="container py-16">
       <div>
         <Title title="Novidades" class="mb-4" />
         <div class="flex flex-col md:flex-row">
@@ -95,6 +95,11 @@ export default {
     OurNumbers,
     BlogCard,
     Footer
+  },
+  data () {
+    return {
+      showNovidades: false
+    }
   }
 }
 </script>

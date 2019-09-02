@@ -6,7 +6,7 @@
       <div class="text-center lg:text-left pr-0 lg:pr-10 text-l my-10">
         Criamos soluções digitais para grandes empresas e startups, desenvolvendo software sob medida, utilizando métodos ágeis e aplicando técnicas avançadas de product discovery.
       </div>
-      <Button class="m-auto lg:my-auto lg:mr-auto lg:ml-0 text-left text-l" text="Saiba Mais" />
+      <Button class="m-auto lg:my-auto lg:mr-auto lg:ml-0 text-left text-l" text="Saiba Mais" :url="link" target="_blank" />
     </div>
   </div>
 </template>
@@ -18,6 +18,12 @@ export default {
   name: 'Atelie',
   components: {
     Button
+  },
+  props: {
+    link: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

@@ -6,7 +6,7 @@
       <div class="text-center mx-auto lg:text-left text-l my-10">
         Startup de autosserviço para servir chopp e conectar pessoas, fazendo a gestão do estoque e também dos pagamentos.
       </div>
-      <Button class="m-auto text-left text-l" text="Saiba Mais" />
+      <Button class="m-auto text-left text-l" text="Saiba Mais" :url="link" target="_blank" />
     </div>
   </div>
 </template>
@@ -18,6 +18,12 @@ export default {
   name: 'Floz Autosserviço',
   components: {
     Button
+  },
+  props: {
+    link: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

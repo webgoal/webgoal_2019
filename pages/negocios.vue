@@ -7,14 +7,14 @@
           <Title small-title="nossos" title="NEGÓCIOS" />
         </div>
         <div class="w-auto lg:w-2/5 text-xl lg:ml-64">
-          <BlockQuote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna." />
+          <BlockQuote quote="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
         </div>
       </div>
       <img class="mx-auto p-3 lg:p-0" src="~/assets/images/company.png" alt="">
-      <Granatum />
-      <Atelie />
-      <Floz />
-      <Lumiar />
+      <Granatum link="https://www.granatum.com.br/" />
+      <Atelie link="https://atelie.software/" />
+      <Floz link="https://www.floz.com.br/" />
+      <Lumiar link="https://www.escolalumiarpocos.com.br/" />
     </div>
     <Footer />
   </section>
