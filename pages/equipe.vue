@@ -79,19 +79,19 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
       <div class="flex flex-col pb-6 lg:flex-row lg:justify-center">
         <div class="flex flex-col justify-around items-center h-56 px-4">
           <img src="~/assets/images/logo-granatum.svg" alt="">
-          <Button text="conheça as vagas" />
+          <Button text="conheça as vagas" url="https://www.granatum.com.br/financeiro/vagas/" target="_blank" />
         </div>
         <div class="flex flex-col justify-around items-center h-56 px-4">
           <img src="~/assets/images/logo-atelie.svg" alt="">
-          <Button text="conheça as vagas" />
+          <Button text="conheça as vagas" url="https://atelie.software/#contato" target="_blank" />
         </div>
         <div class="flex flex-col justify-around items-center h-56 px-4">
           <img src="~/assets/images/logo-floz.svg" alt="">
-          <Button text="conheça as vagas" />
+          <Button text="conheça as vagas" url="https://www.floz.com.br/#contact" target="_blank" />
         </div>
         <div class="flex flex-col justify-around items-center h-56 px-4">
           <img src="~/assets/images/logo-lumiar.svg" class="img-lumiar" alt="">
-          <Button text="conheça as vagas" />
+          <Button text="conheça as vagas" url="https://www.escolalumiarpocos.com.br/trabalhe-conosco" target="_blank" />
         </div>
       </div>
     </div>
