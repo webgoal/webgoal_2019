@@ -3,7 +3,7 @@
     <div
       class="container items-center flex justify-between"
     >
-      <Logo :dark="dark" :header="dark ? true : false" width="180" />
+      <a href="/"><Logo :dark="dark" :header="dark ? true : false" width="180" /></a>
       <ButtonToggle :toggle="toggle" :dark="dark" />
       <Navbar :dark="dark" />
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col px-4 bg-lightGray rounded mt-20 mb-10 w-full md:mb-32">
+  <div class="flex flex-col px-4 bg-lightGray rounded mt-20 mb-10 w-full md:mb-32 altura">
     <header class="-mt-20 text-center">
       <div class="w-40 h-40 mb-8 bg-gray rounded-full mx-auto flex justify-center items-center shadow-xl" :class="iconColor">
         <img :src="icon" class="rounded" alt="">
@@ -45,3 +45,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+  .altura {
+    height: 35rem;
+  }
+</style>

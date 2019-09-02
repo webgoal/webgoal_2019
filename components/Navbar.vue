@@ -5,7 +5,7 @@
       :key="link.name"
       :href="link.url"
       class="p-1 md:px-4 md:p-3"
-      :class="`${textColor}`"
+      :class="`${textColor} ${borderColor}`"
     >
       {{ link.name }}
     </a>
@@ -57,7 +57,7 @@ export default {
     borderColor () {
       const { dark } = this
       let className = 'border-white'
-      if (dark) { className = 'border-black' }
+      if (dark) { className = 'border-blue' }
       return className
     }
   }
@@ -69,7 +69,10 @@ export default {
     border-bottom: 0.1rem solid transparent;
     transition: .5s;
   }
-  a:hover {
+  .border-blue:hover {
     border-bottom: 0.1rem solid #00b8d7;
+  }
+  .border-white:hover {
+    border-bottom: 0.1rem solid white;
   }
 </style>

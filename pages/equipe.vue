@@ -7,7 +7,7 @@
           <Title small-title="conheça nossa" title="EQUIPE" />
         </div>
         <div class="w-full">
-          <BlockQuote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna." />
+          <BlockQuote quote="Conectamos o potencial e a competência de cada um de nós às necessidade e problemas dos nossos clientes." />
         </div>
       </div>
     </div>
@@ -59,7 +59,9 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
           <h2 class="text-5xl font-black font-serif">
             experiências
           </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+          <p>
+            Desde o início tomamos iniciativas inovadoras que favorecem o desempenho dos nossos trabalhadores. Employee experience é o conjunto de esforços para criar uma vivência significativa de trabalho para os colaboradores. Acreditamos que colaboramos para o crescimento profissional das pessoas e as mesmas colaboram para o crescimento das empresas.
+          </p>
         </div>
       </div>
     </div>
@@ -185,7 +187,7 @@ export default {
         },
         {
           type: 'blockquote',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+          content: 'Teste 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
           size: 'md:w-6/12'
         },
         {
@@ -227,7 +229,7 @@ export default {
 
         {
           type: 'blockquote',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+          content: 'Teste 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
           size: 'md:w-3/12'
         },
         {
@@ -293,13 +295,6 @@ export default {
           size: 'md:w-3/12'
         },
         {
-          type: 'blockquote',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
-          image: require('~/assets/images/people/alt.png'),
-          size: 'md:w-6/12'
-        },
-
-        {
           type: 'image',
           title: 'Peterson',
           image: require('~/assets/images/people/peterson.png'),
@@ -332,7 +327,7 @@ export default {
         },
         {
           type: 'blockquote',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+          content: 'Teste 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
           image: require('~/assets/images/people/alt.png'),
           size: 'md:w-3/12'
         },
@@ -365,12 +360,6 @@ export default {
           type: 'image',
           title: 'William',
           image: require('~/assets/images/people/will.png'),
-          size: 'md:w-3/12'
-        },
-        {
-          type: 'blockquote',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
-          image: require('~/assets/images/people/alt.png'),
           size: 'md:w-3/12'
         }
       ]
