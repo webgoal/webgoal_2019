@@ -1,14 +1,14 @@
 <template>
   <nav :class="mobile ? 'flex flex-col items-center mb-3': 'hidden'" class="md:flex md:flex-row">
-    <a
+    <nuxt-link
       v-for="link in navbarList"
       :key="link.name"
-      :href="link.url"
+      :to="link.url"
       class="p-1 md:px-4 md:p-3"
-      :class="`${textColor} ${borderColor}`"
+      :class="`${colorClass}`"
     >
       {{ link.name }}
-    </a>
+    </nuxt-link>
   </nav>
 </template>
 
@@ -48,16 +48,10 @@ export default {
     }
   },
   computed: {
-    textColor () {
+    colorClass () {
       const { dark } = this
-      let className = 'text-white'
-      if (dark) { className = 'text-black' }
-      return className
-    },
-    borderColor () {
-      const { dark } = this
-      let className = 'border-white'
-      if (dark) { className = 'border-blue' }
+      let className = 'text-white border-white'
+      if (dark) { className = 'text-black border-blue' }
       return className
     }
   }
@@ -68,6 +62,9 @@ export default {
   a {
     border-bottom: 0.1rem solid transparent;
     transition: .5s;
+  }
+  .active-link {
+    color: #00b8d7;
   }
   .border-blue:hover {
     border-bottom: 0.1rem solid #00b8d7;
