@@ -43,14 +43,6 @@ export default {
         {
           name: 'História',
           url: '/historia'
-        },
-        {
-          name: 'Blog',
-          url: '#'
-        },
-        {
-          name: 'Contato',
-          url: '#'
         }
       ]
     }
