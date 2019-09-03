@@ -1,14 +1,12 @@
 <template>
   <header id="header" class="px-2 w-full" :class="[absolute ? 'absolute' : 'relative']">
-    <div
-      class="container items-center flex justify-between"
-    >
+    <div class="container items-center flex justify-between">
       <a href="/"><Logo :dark="dark" :header="dark ? true : false" width="180" /></a>
       <ButtonToggle :toggle="toggle" :dark="dark" />
       <Navbar :dark="dark" />
     </div>
-    <transition name="slide">
-      <Navbar v-show="open" :dark="dark" :mobile="true" class="md:hidden navbar" />
+    <transition name="fade">
+      <Navbar v-show="open" :dark="dark" :mobile="true" class="md:hidden" />
     </transition>
   </header>
 </template>
@@ -48,11 +46,10 @@ export default {
 }
 </script>
 <style scoped>
-  .navbar {
-    transform-origin: top;
-    transition: transform .4s ease-in-out;
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
   }
-  .slide-enter, .slide-leave-to{
-    transform: scaleY(0);
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
   }
 </style>
