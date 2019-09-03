@@ -51,7 +51,6 @@ export default {
     colorClass () {
       const { dark } = this
       let className = 'text-white border-white'
-      console.log(this.$nuxt.$route.path)
       if (dark) { className = 'text-black border-blue' }
       return className
     }

@@ -1,7 +1,9 @@
 <template>
   <footer class="bg-lightBlue">
     <div class="container flex flex-col items-center md:flex-row md:justify-around">
-      <Logo height="80" width="150" />
+      <div v-scroll-to="'#header'" class="logo-footer">
+        <Logo height="80" width="150" />
+      </div>
       <p class="self-center text-white">
         Todos os direitos reservados Webgoal 2019&copy;
       </p>
@@ -56,3 +58,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+  .logo-footer {
+    cursor: pointer;
+  }
+</style>

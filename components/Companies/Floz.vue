@@ -15,7 +15,7 @@
 import Button from '~/components/Button'
 
 export default {
-  name: 'Floz Autosserviço',
+  name: 'Floz',
   components: {
     Button
   },
