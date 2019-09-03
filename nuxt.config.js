@@ -20,12 +20,6 @@ export default {
     ]
   },
   /*
-  ** Routes
-  */
-  router: {
-    linkExactActiveClass: 'active-link'
-  },
-  /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },

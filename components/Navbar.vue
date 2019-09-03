@@ -1,14 +1,14 @@
 <template>
   <nav :class="mobile ? 'flex flex-col items-center mb-3': 'hidden'" class="md:flex md:flex-row">
-    <nuxt-link
+    <a
       v-for="link in navbarList"
       :key="link.name"
-      :to="link.url"
+      :href="link.url"
       class="p-1 md:px-4 md:p-3"
-      :class="`${colorClass}`"
+      :class="`${colorClass} ${$nuxt.$route.path === link.url ? $nuxt.$route.path === '/' ? 'home-active' : 'active-link' : ''}`"
     >
       {{ link.name }}
-    </nuxt-link>
+    </a>
   </nav>
 </template>
 
@@ -62,6 +62,10 @@ export default {
   a {
     border-bottom: 0.1rem solid transparent;
     transition: .5s;
+  }
+  .home-active {
+    color: white;
+    border-bottom: 0.1rem solid white;
   }
   .active-link {
     color: #00b8d7;
