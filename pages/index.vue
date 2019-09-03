@@ -14,9 +14,9 @@
       <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
     </div>
 
-    <div class="container">
+    <div class="container flex flex-col items-end">
       <Title small-title="Nossos" title="Negócios" class="mb-10" />
-      <SubTitle color="text-gray" sub-title="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
+      <SubTitle class="text-right" color="text-gray" sub-title="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
       <Button text="Saiba Mais" url="/negocios" />
     </div>
 

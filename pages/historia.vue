@@ -8,7 +8,7 @@
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
-          <Title small-title="nossa" title="história" />
+          <Title small-title="nossa" title="HISTÓRIA" />
           <CardContent content="Começar é sempre mais difícil! E a mudança é uma voz que grita dentro de nós e precisamos ter coragem para ouví-la." />
         </div>
       </div>
@@ -21,6 +21,7 @@
       <div class="flex flex-col w-full">
         <BlockQuote class="text-left" quote="Porque estou acordando toda manhã para ir trabalhar? O que me motiva? Um propósito muito maior do que apenas desenvolver software, queremos melhorar a vida dos clientes, não somente corrigir erros." />
       </div>
+      <Button text="Saiba Mais" url="https://share.atelie.software/antes-um-grupo-de-amigos-hoje-um-grupo-de-empresas-ffbee3334a1a" />
     </div>
 
     <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10">
@@ -30,14 +31,14 @@
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
-          <Title small-title="mas porque" title="poços de caldas" />
+          <Title small-title="mas porque" title="Poços de Caldas" />
           <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
         </div>
       </div>
     </div>
 
     <div class="container flex flex-col py-10">
-      <Title small-title="surge o" title="granatum" />
+      <Title small-title="surge o" title="Granatum" />
       <CardContent content="Outro momento decisivo para nós foi o surgimento do Granatum Pessoal em 2009. Essa ferramenta gratuita era um controle financeiro online baseado no Webgoal Finanças, um software interno que criamos para fazer a gestão financeira da nossa empresa." />
     </div>
 
@@ -47,7 +48,7 @@
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
-          <Title small-title="nasce o" title="ateliê" />
+          <Title small-title="nasce o" title="Ateliê" />
         </div>
       </div>
     </div>
@@ -67,6 +68,7 @@ import CardContent from '~/components/CardContent'
 import Footer from '~/components/Footer'
 import Header from '~/components/Header'
 import Video from '~/components/Video'
+import Button from '~/components/Button'
 
 export default {
   name: 'Historia',
@@ -76,7 +78,8 @@ export default {
     Title,
     Footer,
     Header,
-    Video
+    Video,
+    Button
   }
 }
 </script>

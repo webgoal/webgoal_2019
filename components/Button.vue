@@ -1,5 +1,5 @@
 <template>
-  <a class="inline-block bg-yellow hover:bg-darkYellow text-white rounded py-4 px-12 font-black whitespace-no-wrap" :href="url">
+  <a class="inline-block bg-yellow hover:bg-darkYellow text-white rounded py-4 px-12 font-black whitespace-no-wrap" :href="url" target="_blank">
     {{ text }}
   </a>
 </template>
