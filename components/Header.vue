@@ -1,5 +1,5 @@
 <template>
-  <header class="px-2 w-full" :class="[absolute ? 'absolute' : 'relative']">
+  <header id="header" class="px-2 w-full" :class="[absolute ? 'absolute' : 'relative']">
     <div
       class="container items-center flex justify-between"
     >
