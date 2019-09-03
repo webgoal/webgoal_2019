@@ -5,7 +5,7 @@
       :key="link.name"
       :href="link.url"
       class="p-1 md:px-4 md:p-3"
-      :class="`${colorClass}`"
+      :class="`${colorClass} ${active(link.url)}`"
     >
       {{ link.name }}
     </a>
@@ -53,6 +53,17 @@ export default {
       let className = 'text-white border-white'
       if (dark) { className = 'text-black border-blue' }
       return className
+    }
+  },
+  methods: {
+    active (route) {
+      if (route === this.$nuxt.$route.path && route === '/') {
+        return 'home-active'
+      } else if (route === this.$nuxt.$route.path) {
+        return 'active-link'
+      } else {
+        return ''
+      }
     }
   }
 }
