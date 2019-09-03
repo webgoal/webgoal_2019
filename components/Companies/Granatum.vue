@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div class="container mx-auto flex flex-col px-10 pb-3 lg:py-8 md:flex-row">
-      <img class="lg:ml-10 my-auto mx-auto sm:mx-auto" src="~/assets/images/logo-granatum.svg" alt="">
-      <div class="text-left text-l my-auto py-3 md:py-0 md:pl-10 md:pr-4 sm:px-auto">
+  <div class="flex flex-col p-10 lg:flex-row">
+    <div class="container flex lg:items-end flex-col mr-0 px-0 my-auto pb-6 lg:pb-0">
+      <img class="mx-auto w-56 lg:mx-0" src="~/assets/images/logo-granatum.svg" alt="">
+      <div class="text-center pr-0 my-10 lg:text-right">
         Serviço online de gestão financeira sem complicação que proporciona inteligência financeira para empresas e startups.
       </div>
-      <Button class="m-auto" text="Saiba Mais" :url="link" target="_blank" />
+      <Button class="m-auto lg:m-0" text="Saiba Mais" :url="link" target="_blank" />
     </div>
-    <img class="mx-auto p-3" src="~/assets/images/working.png" alt="">
+    <img class="mx-auto lg:mx-10" src="~/assets/images/working.png" alt="">
   </div>
 </template>
 
