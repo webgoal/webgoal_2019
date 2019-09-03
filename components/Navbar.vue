@@ -5,7 +5,7 @@
       :key="link.name"
       :href="link.url"
       class="p-1 md:px-4 md:p-3"
-      :class="`${colorClass} ${$nuxt.$route.path === link.url ? $nuxt.$route.path === '/' ? 'home-active' : 'active-link' : ''}`"
+      :class="`${colorClass}`"
     >
       {{ link.name }}
     </a>
