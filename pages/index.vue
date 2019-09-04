@@ -11,7 +11,7 @@
         content="Todas as empresas do grupo Webgoal adotam uma gestão orgânica, baseada na democracia e pautada em relações de confiança entre as pessoas. Hierarquias formais, comando e controle são substituídos por autonomia, colaboração e liderança emergente."
         button-text="Saiba mais"
       />
-      <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
+      <img src="~/assets/images/wg_home.jpg">
     </div>
 
     <div class="container flex flex-col items-end">
@@ -36,11 +36,11 @@
         <Title title="Experiências" class="mb-4" />
         <div class="md:flex md:flex-row-reverse">
           <div class="md:w-7/12">
-            <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
+            <img src="~/assets/images/wg_xp_rp.jpg">
           </div>
           <div class="text-right md:w-5/12 md:pr-4">
             <div class="py-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto, illo debitis eveniet repellat voluptatibus laborum vitae porro consectetur itaque expedita ex. Cupiditate rerum, vitae necessitatibus pariatur id hic corporis?</p>
+              <p>Conectamos o potencial e a competência de cada um de nós às necessidade e problemas dos nossos clientes.</p>
             </div>
             <Button text="Saiba Mais" url="/equipe" />
           </div>
@@ -74,7 +74,6 @@ import HomeHero from '~/components/HomeHero'
 import BlogSection from '~/components/BlogSection'
 import BlogCard from '~/components/BlogCard'
 import Card from '~/components/Card'
-import Video from '~/components/Video'
 import Title from '~/components/Title'
 import SubTitle from '~/components/SubTitle'
 import Button from '~/components/Button'
@@ -88,7 +87,6 @@ export default {
     Header,
     HomeHero,
     Card,
-    Video,
     BlogSection,
     Title,
     SubTitle,
