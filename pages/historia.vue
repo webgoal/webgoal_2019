@@ -4,7 +4,7 @@
 
     <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 items-center">
       <div class="flex flex-col w-full pr-6">
-        <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
+        <img src="~/assets/images/wg_todos.jpg" alt="todos">
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
