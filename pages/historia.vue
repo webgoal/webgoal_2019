@@ -53,8 +53,8 @@
       </div>
     </div>
 
-    <div class="container flex flex-col py-10 items-center">
-      <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
+    <div class="container flex justify-center py-10 items-center">
+      <Video url="https://www.youtube.com/watch?v=unPQHIc0oW0" video-id="unPQHIc0oW0" width="600" height="500" />
     </div>
 
     <Footer />
