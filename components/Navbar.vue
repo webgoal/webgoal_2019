@@ -1,14 +1,14 @@
 <template>
   <nav :class="mobile ? 'flex flex-col items-center mb-3': 'hidden'" class="md:flex md:flex-row">
-    <a
+    <nuxt-link
       v-for="link in navbarList"
       :key="link.name"
-      :href="link.url"
+      :to="link.url"
       class="p-1 md:px-4 md:p-3"
       :class="`${colorClass} ${active(link.url)}`"
     >
       {{ link.name }}
-    </a>
+    </nuxt-link>
   </nav>
 </template>
 
