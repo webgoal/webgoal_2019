@@ -1,6 +1,6 @@
 <template>
   <a :href="url" target="_blank">
-    <img :src="thumbnail" :alt="description" class="w-auto">
+    <img :src="thumbnail" :alt="description" :width="width" :height="height">
   </a>
 </template>
 
@@ -17,6 +17,14 @@ export default {
       default: ''
     },
     description: {
+      type: String,
+      default: ''
+    },
+    width: {
+      type: String,
+      default: ''
+    },
+    height: {
       type: String,
       default: ''
     }
