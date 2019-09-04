@@ -2,20 +2,17 @@
   <div class="pb-10">
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-button-prev" />
-
       <div class="swiper-wrapper pb-10">
         <div v-for="(slide, index) in slides" :key="index" class="swiper-slide">
           <div>
-            <div>
-              <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
-            </div>
-            <h1 class="text-lg md:text-2xl font-bold leading-none mt-3">
-              {{ slide.name }}
-            </h1>
-            <p class="text-lg md:text-2xl leading-none">
-              {{ slide.position }}
-            </p>
+            <Video :url="slide.url" :video-id="slide.videoId" />
           </div>
+          <h1 class="text-lg md:text-2xl font-bold leading-none mt-3">
+            {{ slide.name }}
+          </h1>
+          <p class="text-lg md:text-2xl leading-none">
+            {{ slide.position }}
+          </p>
         </div>
       </div>
       <div class="swiper-pagination" />
@@ -68,6 +65,13 @@
 .swiper-pagination-bullet-active {
   background-color: #000000;
 }
+
+.swiper-button-prev {
+  background-image: url(../assets/icons/angle-down.svg)
+}
+.swiper-button-next {
+  background-image: url(../assets/icons/angle-right.svg)
+}
 </style>
 
 <script>
@@ -81,6 +85,7 @@ export default {
   data () {
     return {
       swiperOption: {
+        spaceBetween: -50,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
@@ -96,27 +101,32 @@ export default {
         {
           name: 'Lorem Ipsum 1',
           position: 'Lorem ipsum - CEO',
-          url: '#'
+          videoId: 'OyUn-ZCnzfk',
+          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
         },
         {
           name: 'Lorem Ipsum 2',
           position: 'Lorem ipsum - CEO',
-          url: '#'
+          videoId: 'OyUn-ZCnzfk',
+          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
         },
         {
           name: 'Lorem Ipsum 3',
           position: 'Lorem ipsum - CEO',
-          url: '#'
+          videoId: 'OyUn-ZCnzfk',
+          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
         },
         {
           name: 'Lorem Ipsum 4',
           position: 'Lorem ipsum - CEO',
-          url: '#'
+          videoId: 'OyUn-ZCnzfk',
+          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
         },
         {
           name: 'Lorem Ipsum 5',
           position: 'Lorem ipsum - CEO',
-          url: '#'
+          videoId: 'OyUn-ZCnzfk',
+          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
         }
       ]
     }
