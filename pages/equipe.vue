@@ -53,11 +53,11 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
     <div class="container">
       <div class="flex flex-row flex-wrap -mx-4">
         <div class="w-full md:w-6/12 px-4">
-          <img src="~/assets/images/experiencia.svg" alt="">
+          <img src="~/assets/images/img_exp.jpg" alt="">
         </div>
         <div class="w-full md:w-6/12 px-4 flex flex-col justify-center">
           <h2 class="text-5xl font-black font-serif">
-            experiências
+            Experiências
           </h2>
           <p>
             Desde o início tomamos iniciativas inovadoras que favorecem o desempenho dos nossos trabalhadores. Employee experience é o conjunto de esforços para criar uma vivência significativa de trabalho para os colaboradores. Acreditamos que colaboramos para o crescimento profissional das pessoas e as mesmas colaboram para o crescimento das empresas.
@@ -151,13 +151,13 @@ export default {
 
         {
           type: 'image',
-          title: 'Canedo',
+          title: 'Gustavo Canedo',
           image: require('~/assets/images/people/canedo.png'),
           size: 'md:w-3/12'
         },
         {
           type: 'image',
-          title: 'Cris',
+          title: 'Cristiane',
           image: require('~/assets/images/people/cris.png'),
           size: 'md:w-3/12'
         },
@@ -169,7 +169,7 @@ export default {
         },
         {
           type: 'image',
-          title: 'Dobrado',
+          title: 'Daniel Oshiro',
           image: require('~/assets/images/people/dobrado.png'),
           size: 'md:w-3/12'
         },
@@ -241,13 +241,13 @@ export default {
 
         {
           type: 'image',
-          title: 'Leo Godde',
+          title: 'Leonardo Godde',
           image: require('~/assets/images/people/leogodde.png'),
           size: 'md:w-3/12'
         },
         {
           type: 'image',
-          title: 'Leo Neves',
+          title: 'Leonardo Neves',
           image: require('~/assets/images/people/leo.png'),
           size: 'md:w-3/12'
         },
@@ -339,7 +339,7 @@ export default {
         },
         {
           type: 'image',
-          title: 'Tom',
+          title: 'Washington',
           image: require('~/assets/images/people/tom.png'),
           size: 'md:w-3/12'
         },
