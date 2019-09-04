@@ -1,6 +1,6 @@
 <template>
   <a :href="url" target="_blank">
-    <img :src="thumbnail" :alt="description" :width="width" :height="height">
+    <img :src="thumbnail" :alt="description" :width="width" :height="height" :class="videoClass">
   </a>
 </template>
 
@@ -25,6 +25,10 @@ export default {
       default: ''
     },
     height: {
+      type: String,
+      default: ''
+    },
+    videoClass: {
       type: String,
       default: ''
     }

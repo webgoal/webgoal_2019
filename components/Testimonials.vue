@@ -4,9 +4,7 @@
       <div class="swiper-button-prev" />
       <div class="swiper-wrapper pb-10">
         <div v-for="(slide, index) in slides" :key="index" class="swiper-slide">
-          <div>
-            <Video :url="slide.url" :video-id="slide.videoId" />
-          </div>
+          <Video :url="slide.url" :video-id="slide.videoId" video-class="rounded" />
           <h1 class="text-lg md:text-2xl font-bold leading-none mt-3">
             {{ slide.name }}
           </h1>
@@ -99,32 +97,20 @@ export default {
       },
       slides: [
         {
-          name: 'Lorem Ipsum 1',
-          position: 'Lorem ipsum - CEO',
-          videoId: 'OyUn-ZCnzfk',
-          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
+          name: 'O início de tudo',
+          position: 'por Matheus Haddad',
+          videoId: 'unPQHIc0oW0',
+          url: 'https://www.youtube.com/watch?v=unPQHIc0oW0'
         },
         {
-          name: 'Lorem Ipsum 2',
-          position: 'Lorem ipsum - CEO',
-          videoId: 'OyUn-ZCnzfk',
-          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
+          name: 'Nossa cultura e estilo de gestão',
+          position: 'por Matheus Haddad',
+          videoId: 'KtPTslwCKQs',
+          url: 'https://www.youtube.com/watch?v=KtPTslwCKQs'
         },
         {
-          name: 'Lorem Ipsum 3',
-          position: 'Lorem ipsum - CEO',
-          videoId: 'OyUn-ZCnzfk',
-          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
-        },
-        {
-          name: 'Lorem Ipsum 4',
-          position: 'Lorem ipsum - CEO',
-          videoId: 'OyUn-ZCnzfk',
-          url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
-        },
-        {
-          name: 'Lorem Ipsum 5',
-          position: 'Lorem ipsum - CEO',
+          name: 'O propósito do Ateliê de Software',
+          position: 'Herbertt Bamonde',
           videoId: 'OyUn-ZCnzfk',
           url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
         }
