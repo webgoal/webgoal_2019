@@ -5,7 +5,7 @@
         <div v-for="(slide, index) in slides" :key="index" class="swiper-slide">
           <div>
             <div>
-              <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
+              <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
             </div>
             <h1 class="text-lg md:text-2xl font-bold leading-none mt-3">
               {{ slide.name }}

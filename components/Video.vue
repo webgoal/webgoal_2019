@@ -1,14 +1,7 @@
 <template>
-  <!-- <a :href="url">
-    <img :src="source" :alt="description" class="w-auto">
-  </a> -->
-  <iframe
-    :width="width"
-    :height="height"
-    :src="url"
-    frameborder="0"
-    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-  />
+  <a :href="url" target="_blank">
+    <img :src="thumbnail" :alt="description" class="w-auto">
+  </a>
 </template>
 
 <script>
@@ -19,13 +12,14 @@ export default {
       type: String,
       default: ''
     },
-    width: {
-      type: Number,
-      default: 0
-    },
-    height: {
-      type: Number,
-      default: 0
+    videoId: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    thumbnail () {
+      return `http://img.youtube.com/vi/${this.videoId}/0.jpg`
     }
   }
 }

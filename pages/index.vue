@@ -11,7 +11,7 @@
         content="Todas as empresas do grupo Webgoal adotam uma gestão orgânica, baseada na democracia e pautada em relações de confiança entre as pessoas. Hierarquias formais, comando e controle são substituídos por autonomia, colaboração e liderança emergente."
         button-text="Saiba mais"
       />
-      <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
+      <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
     </div>
 
     <div class="container flex flex-col items-end">
