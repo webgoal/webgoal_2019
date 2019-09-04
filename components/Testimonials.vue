@@ -29,6 +29,18 @@
   transform: scale(0.5);
   transition: scale all 1s;
 }
+.swiper-slide:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.swiper-slide-active:after {
+  display: none;
+}
 .swiper-slide h1,
 .swiper-slide p {
   display: none;
