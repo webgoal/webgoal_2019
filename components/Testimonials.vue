@@ -1,6 +1,8 @@
 <template>
   <div class="pb-10">
     <div v-swiper:mySwiper="swiperOption">
+      <div class="swiper-button-prev"></div>
+
       <div class="swiper-wrapper pb-10">
         <div v-for="(slide, index) in slides" :key="index" class="swiper-slide">
           <div>
@@ -17,6 +19,7 @@
         </div>
       </div>
       <div class="swiper-pagination" />
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </template>
