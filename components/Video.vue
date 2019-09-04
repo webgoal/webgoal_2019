@@ -15,11 +15,15 @@ export default {
     videoId: {
       type: String,
       default: ''
+    },
+    description: {
+      type: String,
+      default: ''
     }
   },
   computed: {
     thumbnail () {
-      return `http://img.youtube.com/vi/${this.videoId}/0.jpg`
+      return `http://img.youtube.com/vi/${this.videoId}/maxresdefault.jpg`
     }
   }
 }
