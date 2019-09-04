@@ -15,9 +15,11 @@
     </div>
 
     <div class="container flex flex-col items-end">
-      <Title small-title="Nossos" title="Negócios" class="mb-10" />
-      <SubTitle class="text-right" color="text-gray" sub-title="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
-      <Button text="Saiba Mais" url="/negocios" />
+      <Title small-title="Nossos" title="Negócios" class="mb-10 self-center" />
+      <div class="flex flex-row w-3/4 items-center">
+        <SubTitle class="text-right mr-10" color="text-gray" sub-title="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
+        <Button text="Saiba Mais" url="/negocios" />
+      </div>
     </div>
 
     <BlogSection />
@@ -34,7 +36,7 @@
         <Title title="Experiências" class="mb-4" />
         <div class="md:flex md:flex-row-reverse">
           <div class="md:w-7/12">
-            <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
+            <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
           </div>
           <div class="text-right md:w-5/12 md:pr-4">
             <div class="py-4">

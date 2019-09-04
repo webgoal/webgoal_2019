@@ -4,7 +4,7 @@
 
     <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 items-center">
       <div class="flex flex-col w-full pr-6">
-        <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
+        <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
@@ -32,7 +32,7 @@
       <div class="flex flex-col w-full">
         <div class="text-left">
           <Title small-title="mas porque" title="Poços de Caldas" />
-          <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
+          <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
     </div>
 
     <div class="container flex flex-col py-10 items-center">
-      <Video :width="560" :height="315" url="https://www.youtube.com/embed/OyUn-ZCnzfk" />
+      <Video url="https://www.youtube.com/watch?v=OyUn-ZCnzfk" video-id="OyUn-ZCnzfk" />
     </div>
 
     <Footer />
