@@ -2,9 +2,9 @@
   <section>
     <Header />
     <HomeHero />
-    <div class="container flex flex-row py-10">
+    <div class="container flex flex-col-reverse md:flex-row py-10">
       <Card
-        class="md:w-6/12 pr-6 w-full"
+        class="md:w-6/12 pr-6 w-full pt-10 md:pt-0"
         small-title="estilo de"
         title="GESTÃO"
         sub-title="Gestão centrada nas pessoas."
@@ -16,7 +16,7 @@
 
     <div class="container flex flex-col items-end">
       <Title small-title="Nossos" title="Negócios" class="mb-10 self-center" />
-      <div class="flex flex-row w-3/4 items-center">
+      <div class="flex flex-col md:flex-row w-3/4 items-center">
         <SubTitle class="text-right mr-10" color="text-gray" sub-title="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
         <Button text="Saiba Mais" url="/negocios" />
       </div>
