@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" target="_blank">
+  <a :href="url" :target="target">
     <button class="bg-yellow hover:bg-darkYellow text-white rounded font-black w-40 h-12">{{ text }}</button>
   </a>
 </template>
@@ -15,6 +15,10 @@ export default {
     url: {
       type: String,
       default: ''
+    },
+    target: {
+      type: String,
+      default: '_self'
     }
   }
 }

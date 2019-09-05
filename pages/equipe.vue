@@ -79,20 +79,20 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
 
     <div class="container">
       <div class="flex flex-col pb-6 lg:flex-row lg:justify-center">
-        <div class="flex flex-col justify-around items-center h-56 px-4">
-          <img src="~/assets/images/logo-granatum.svg" alt="">
-          <Button text="conheça as vagas" url="https://www.granatum.com.br/financeiro/vagas/" target="_blank" />
+        <div class="flex flex-col justify-around items-center px-4">
+          <img src="~/assets/images/logo-granatum.svg" width="200" class="mt-16" alt="">
+          <Button text="conheça as vagas" url="https://www.granatum.com.br/financeiro/vagas/" class="mt-8" target="_blank" />
         </div>
-        <div class="flex flex-col justify-around items-center h-56 px-4">
-          <img src="~/assets/images/logo-atelie.svg" alt="">
-          <Button text="conheça as vagas" url="https://atelie.software/#contato" target="_blank" />
+        <div class="flex flex-col justify-around items-center px-4">
+          <img src="~/assets/images/logo-atelie.svg" width="200" class="mt-16" alt="">
+          <Button text="conheça as vagas" url="https://atelie.software/#contato" class="mt-8" target="_blank" />
         </div>
-        <div class="flex flex-col justify-around items-center h-56 px-4">
-          <img src="~/assets/images/logo-floz.svg" alt="">
-          <Button text="conheça as vagas" url="https://www.floz.com.br/#contact" target="_blank" />
+        <div class="flex flex-col justify-around items-center px-4">
+          <img src="~/assets/images/logo-floz.svg" width="200" class="mt-16" alt="">
+          <Button text="conheça as vagas" url="https://www.floz.com.br/#contact" class="mt-10" target="_blank" />
         </div>
-        <div class="flex flex-col justify-around items-center h-56 px-4">
-          <img src="~/assets/images/logo-lumiar.svg" class="img-lumiar" alt="">
+        <div class="flex flex-col justify-around items-center px-4">
+          <img src="~/assets/images/logo-lumiar.svg" width="200" alt="">
           <Button text="conheça as vagas" url="https://www.escolalumiarpocos.com.br/trabalhe-conosco" target="_blank" />
         </div>
       </div>
@@ -367,11 +367,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  .img-lumiar {
-    height: 120px;
-    margin-bottom: -25px;
-    margin-top: -35px;
-  }
-</style>>
