@@ -186,6 +186,11 @@ export default {
           size: 'md:w-3/12'
         },
         {
+          type: 'blockquote',
+          content: '"Software é apenas uma das coisas que fazemos aqui dentro." - Eraldo B. Santos (Ateliê de Software)',
+          size: 'md:w-6/12'
+        },
+        {
           type: 'image',
           title: 'Felipe',
           image: require('~/assets/images/people/felipe.png'),
@@ -219,6 +224,11 @@ export default {
           type: 'image',
           title: 'João Paulo',
           image: require('~/assets/images/people/joao.png'),
+          size: 'md:w-3/12'
+        },
+        {
+          type: 'blockquote',
+          content: '"Aprendíamos como desenvolver software para tornar empresas melhores e pessoas mais felizes." - Matheus Haddad (sócio fundador da Webgoal)',
           size: 'md:w-3/12'
         },
         {
