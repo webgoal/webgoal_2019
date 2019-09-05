@@ -186,11 +186,6 @@ export default {
           size: 'md:w-3/12'
         },
         {
-          type: 'blockquote',
-          content: 'Teste 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
-          size: 'md:w-6/12'
-        },
-        {
           type: 'image',
           title: 'Felipe',
           image: require('~/assets/images/people/felipe.png'),
@@ -224,12 +219,6 @@ export default {
           type: 'image',
           title: 'João Paulo',
           image: require('~/assets/images/people/joao.png'),
-          size: 'md:w-3/12'
-        },
-
-        {
-          type: 'blockquote',
-          content: 'Teste 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
           size: 'md:w-3/12'
         },
         {
@@ -323,12 +312,6 @@ export default {
           type: 'image',
           title: 'Symone',
           image: require('~/assets/images/people/simone.png'),
-          size: 'md:w-3/12'
-        },
-        {
-          type: 'blockquote',
-          content: 'Teste 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
-          image: require('~/assets/images/people/alt.png'),
           size: 'md:w-3/12'
         },
         {
