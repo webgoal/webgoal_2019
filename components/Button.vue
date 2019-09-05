@@ -10,7 +10,7 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Saiba Mais'
+      default: 'Saiba mais'
     },
     url: {
       type: String,
