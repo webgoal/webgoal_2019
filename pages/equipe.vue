@@ -85,7 +85,7 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
         </div>
         <div class="flex flex-col justify-around items-center px-4">
           <img src="~/assets/images/logo-atelie.svg" width="200" class="mt-16" alt="">
-          <Button text="conheça as vagas" url="https://atelie.software/#contato" class="mt-8" target="_blank" />
+          <Button text="conheça as vagas" url="https://docs.google.com/forms/d/e/1FAIpQLSdTCpnq5z_k6xd1kIQapsZNAbS9U7qSUjMQ4mrfo7hp7h8JZA/viewform" class="mt-8" target="_blank" />
         </div>
         <div class="flex flex-col justify-around items-center px-4">
           <img src="~/assets/images/logo-floz.svg" width="200" class="mt-16" alt="">
