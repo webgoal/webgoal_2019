@@ -12,7 +12,7 @@
       <div class="px-2">
         <BlogCard
           :image-url="require('~/assets/images/lumiar_home.jpg')"
-          title="Escola Lumiar de Poços de Caldas"
+          title="Escola Lumiar Poços de Caldas"
           content="Considerada umas das escolas mais inovadoras do mundo por utilizar uma metodologia de ensino-aprendizagem baseada no desenvolvimento de habilidades e competências a partir de projetos e grupos multietários."
           link="https://www.escolalumiarpocos.com.br/"
         />
@@ -22,7 +22,7 @@
       <div class="px-2">
         <BlogCard
           :image-url="require('~/assets/images/granatum_home.jpg')"
-          title="Granatum Sistema Financeiro"
+          title="Granatum Controle Financeiro"
           content="Serviço online de gestão financeira sem complicação que proporciona inteligência financeira para empresas e startups."
           link="https://www.granatum.com.br/"
         />
