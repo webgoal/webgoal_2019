@@ -15,6 +15,14 @@
       <Atelie link="https://atelie.software/" />
       <Floz link="https://www.floz.com.br/" />
       <Lumiar link="https://www.escolalumiarpocos.com.br/" />
+      <Companies
+        name-button="entre em contato"
+        :urls="[
+          'https://www.granatum.com.br/financeiro/',
+          'https://atelie.software/#contato',
+          'https://www.floz.com.br/#contact',
+          'https://docs.google.com/forms/d/e/1FAIpQLSdF_8nQe35HJsu42lmLEbsRMIzpPdNzK3ZgIv5ZBF_WqXjI9g/viewform']"
+      />
     </div>
     <Footer />
   </section>
@@ -29,6 +37,7 @@ import Atelie from '~/components/Companies/Atelie'
 import Floz from '~/components/Companies/Floz'
 import Lumiar from '~/components/Companies/Lumiar'
 import Footer from '~/components/Footer'
+import Companies from '~/components/Companies'
 
 export default {
   name: 'Equipe',
@@ -40,7 +49,8 @@ export default {
     Atelie,
     Floz,
     Lumiar,
-    Footer
+    Footer,
+    Companies
   }
 }
 </script>

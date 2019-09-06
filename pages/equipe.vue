@@ -77,26 +77,14 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
       </div>
     </div>
 
-    <div class="container">
-      <div class="flex flex-col pb-6 lg:flex-row lg:justify-center">
-        <div class="flex flex-col justify-around items-center px-4">
-          <img src="~/assets/images/logo-granatum.svg" width="200" class="mt-16" alt="">
-          <Button text="conheça as vagas" url="https://www.granatum.com.br/financeiro/vagas/" class="mt-8" target="_blank" />
-        </div>
-        <div class="flex flex-col justify-around items-center px-4">
-          <img src="~/assets/images/logo-atelie.svg" width="200" class="mt-16" alt="">
-          <Button text="conheça as vagas" url="https://docs.google.com/forms/d/e/1FAIpQLSdTCpnq5z_k6xd1kIQapsZNAbS9U7qSUjMQ4mrfo7hp7h8JZA/viewform" class="mt-8" target="_blank" />
-        </div>
-        <div class="flex flex-col justify-around items-center px-4">
-          <img src="~/assets/images/logo-floz.svg" width="200" class="mt-16" alt="">
-          <Button text="conheça as vagas" url="https://www.floz.com.br/#contact" class="mt-10" target="_blank" />
-        </div>
-        <div class="flex flex-col justify-around items-center px-4">
-          <img src="~/assets/images/logo-lumiar.svg" width="200" alt="">
-          <Button text="conheça as vagas" url="https://www.escolalumiarpocos.com.br/trabalhe-conosco" target="_blank" />
-        </div>
-      </div>
-    </div>
+    <Companies
+      name-button="conheça as vagas"
+      :urls="[
+        'https://www.granatum.com.br/financeiro/vagas/',
+        'https://docs.google.com/forms/d/e/1FAIpQLSdTCpnq5z_k6xd1kIQapsZNAbS9U7qSUjMQ4mrfo7hp7h8JZA/viewform',
+        'https://www.floz.com.br/#contact',
+        'https://www.escolalumiarpocos.com.br/trabalhe-conosco']"
+    />
     <Footer />
   </section>
 </template>
@@ -108,7 +96,7 @@ import Title from '~/components/Title'
 import BlockQuote from '~/components/BlockQuote'
 import IconCard from '~/components/IconCard'
 import Avatar from '~/components/Avatar'
-import Button from '~/components/Button'
+import Companies from '~/components/Companies'
 
 export default {
   name: 'Equipe',
@@ -118,8 +106,8 @@ export default {
     BlockQuote,
     IconCard,
     Avatar,
-    Button,
-    Footer
+    Footer,
+    Companies
   },
   data () {
     return {
