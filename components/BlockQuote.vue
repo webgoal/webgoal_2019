@@ -22,4 +22,4 @@ export default {
  .text {
    left: 20px;
  }
-</style>>
+</style>

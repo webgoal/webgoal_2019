@@ -2,7 +2,7 @@
   <section>
     <Header />
     <HomeHero />
-    <div class="container flex flex-col-reverse md:flex-row py-10">
+    <div class="container flex flex-col-reverse md:flex-row py-10 mt-24">
       <Card
         class="md:w-6/12 pr-6 w-full pt-10 md:pt-0"
         small-title="estilo de"
@@ -14,7 +14,7 @@
       <img src="~/assets/images/wg_home.jpg">
     </div>
 
-    <div class="container flex flex-col items-end">
+    <div class="container flex flex-col items-end mt-24">
       <Title small-title="Nossos" title="Negócios" class="mb-10 self-center" />
       <div class="flex flex-col md:flex-row w-3/4 items-center">
         <SubTitle class="text-right mr-10" color="text-gray" sub-title="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
@@ -22,16 +22,16 @@
       </div>
     </div>
 
-    <BlogSection />
+    <BlogSection class="mt-24" />
 
-    <div class="container">
+    <div class="container mt-24">
       <Title title="Depoimentos" class="mb-10" />
       <Testimonials />
     </div>
 
-    <OurNumbers />
+    <OurNumbers class="mt-24" />
 
-    <div class="container py-16">
+    <div class="container py-16 mt-24 mb-24">
       <div class="md:max-w-4xl mx-auto">
         <Title title="Experiências" class="mb-4" />
         <div class="md:flex md:flex-row-reverse">

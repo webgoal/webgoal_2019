@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-24">
       <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-4">
         <div class="w-full lg:w-4/12 px-4">
           <IconCard
@@ -45,7 +45,7 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
       <div class="flex flex-row flex-wrap -mx-4">
         <div v-for="(gridItem, index) in grid" :key="index" class="w-full px-4 flex justify-center items-center" :class="gridItem.size">
           <Avatar v-if="gridItem.type === 'image'" :image="gridItem.image" :title="gridItem.title" />
-          <BlockQuote v-if="gridItem.type === 'blockquote'" :quote="gridItem.content" />
+          <BlockQuote v-if="gridItem.type === 'blockquote'" :quote="gridItem.content" :class="gridItem.size" />
         </div>
       </div>
     </div>
@@ -79,6 +79,7 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
 
     <Companies
       name-button="conheça as vagas"
+      class="mt-24 mb-24"
       :urls="[
         'https://www.granatum.com.br/financeiro/vagas/',
         'https://docs.google.com/forms/d/e/1FAIpQLSdTCpnq5z_k6xd1kIQapsZNAbS9U7qSUjMQ4mrfo7hp7h8JZA/viewform',
@@ -215,11 +216,6 @@ export default {
           size: 'md:w-3/12'
         },
         {
-          type: 'blockquote',
-          content: '"Aprendíamos como desenvolver software para tornar empresas melhores e pessoas mais felizes." - Matheus Haddad (sócio fundador da Webgoal)',
-          size: 'md:w-3/12'
-        },
-        {
           type: 'image',
           title: 'Lara',
           image: require('~/assets/images/people/lara.png'),
@@ -268,7 +264,6 @@ export default {
           image: require('~/assets/images/people/matheushaddad.png'),
           size: 'md:w-3/12'
         },
-
         {
           type: 'image',
           title: 'Miguel',
@@ -280,6 +275,11 @@ export default {
           title: 'Patrícia',
           image: require('~/assets/images/people/patricia.png'),
           size: 'md:w-3/12'
+        },
+        {
+          type: 'blockquote',
+          content: '"Aprendíamos como desenvolver software para tornar empresas melhores e pessoas mais felizes." - Matheus Haddad (sócio fundador da Webgoal)',
+          size: 'md:w-6/12'
         },
         {
           type: 'image',
