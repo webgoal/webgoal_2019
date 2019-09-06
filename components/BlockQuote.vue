@@ -1,9 +1,9 @@
 <template>
   <blockquote class="relative my-4">
-    <span class="p-8 inline-block text-gray">
+    <img src="~/assets/icons/quote.png" alt="">
+    <span class="p-8 inline-block text-gray absolute top-0 text">
       {{ quote }}
     </span>
-    <img class="absolute top-0 left-0" src="~/assets/icons/quote.png" alt="">
   </blockquote>
 </template>
 
@@ -18,3 +18,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+ .text {
+   left: 20px;
+ }
+</style>>
