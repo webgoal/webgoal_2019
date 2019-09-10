@@ -10,7 +10,7 @@
       </div>
     </div>
     <img class="mx-auto p-3 lg:p-0 lg:mt-24" src="~/assets/images/company.png" alt="">
-    <Granatum class="container mt-24" link="https://www.granatum.com.br/" />
+    <Granatum class="mt-24" link="https://www.granatum.com.br/" />
     <Atelie class="container mt-24" link="https://atelie.software/" />
     <Floz class="mt-24" link="https://www.floz.com.br/" />
     <Lumiar class="container mt-24" link="https://www.escolalumiarpocos.com.br/" />
