@@ -57,9 +57,8 @@ export default {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: .3s ease;
-    background-color: black;
   }
   .icon {
     fill: white;
@@ -74,6 +73,7 @@ export default {
     transform: translate(-50%, -50%);
   }
   .video:hover .overlay {
+    background-color: black;
     opacity: 0.5;
   }
 </style>
