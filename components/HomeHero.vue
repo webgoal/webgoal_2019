@@ -4,7 +4,7 @@
   >
     <Logo height="200" width="300" />
     <p class="font-serif leading-none text-white text-4xl max-w-xs">
-      Negócios que tornam pessoas melhores.
+      Sustentamos negócios disruptivos que transformam a vida das pessoas.
     </p>
   </div>
 </template>
