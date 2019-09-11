@@ -1,8 +1,8 @@
 {
-  "name": "webgoal_site",
+  "name": "Webgoal",
   "version": "1.0.0",
-  "description": "Grupo Webgoal",
-  "author": "Dobrado, Davi, Lucas, Elton",
+  "description": "Webgoal Descrição",
+  "author": "Webgoal",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
