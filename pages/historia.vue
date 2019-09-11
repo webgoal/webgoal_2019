@@ -19,7 +19,12 @@
         <span class="text-left lg:text-right text-4xl font-bold">Antes, um grupo de amigos. Hoje, um grupo de empresas.</span>
       </div>
       <div class="flex flex-col w-full">
-        <BlockQuote class="text-left" quote="Porque estou acordando toda manhã para ir trabalhar? O que me motiva? Um propósito muito maior do que apenas desenvolver software, queremos melhorar a vida dos clientes, não somente corrigir erros." />
+        <BlockQuote
+          class="text-left"
+          quote="Porque estou acordando toda manhã para ir trabalhar? O que me motiva? Um propósito muito maior do que apenas desenvolver software, queremos melhorar a vida dos clientes, não somente corrigir erros."
+          block-style="relative -mt-16"
+          text-style="absolute top-custom left-custom text-gray"
+        />
       </div>
       <Button text="Saiba Mais" url="https://share.atelie.software/antes-um-grupo-de-amigos-hoje-um-grupo-de-empresas-ffbee3334a1a" />
     </div>

@@ -6,7 +6,11 @@
         <Title small-title="nossos" title="NEGÓCIOS" />
       </div>
       <div class="w-auto lg:w-2/5 text-xl lg:ml-64">
-        <BlockQuote quote="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade." />
+        <BlockQuote
+          quote="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade."
+          block-style="relative mt-10"
+          text-style="absolute top-custom left-custom text-gray"
+        />
       </div>
     </div>
     <img class="mx-auto p-3 lg:p-0 lg:mt-24" src="~/assets/images/company.png" alt="">

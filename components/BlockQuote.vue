@@ -1,7 +1,7 @@
 <template>
-  <blockquote class="relative my-4">
-    <img src="~/assets/icons/quote.png" alt="">
-    <span class="p-8 inline-block text-gray absolute top-0 text">
+  <blockquote :class="blockStyle">
+    <img src="~/assets/icons/quote.png" alt="" :class="imgStyle">
+    <span :class="textStyle">
       {{ quote }}
     </span>
   </blockquote>
@@ -14,12 +14,30 @@ export default {
     quote: {
       type: String,
       default: ''
+    },
+    blockStyle: {
+      type: String,
+      default: ''
+    },
+    imgStyle: {
+      type: String,
+      default: ''
+    },
+    textStyle: {
+      type: String,
+      default: ''
     }
   }
 }
 </script>
 <style scoped>
- .text {
-   left: 20px;
- }
+  .height-custom {
+    height: 10rem;
+  }
+  .top-custom {
+    top: 2.5rem;
+  }
+  .left-custom {
+    left: 3rem;
+  }
 </style>

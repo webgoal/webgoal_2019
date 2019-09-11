@@ -7,7 +7,11 @@
           <Title small-title="conheça nossa" title="EQUIPE" />
         </div>
         <div class="w-full">
-          <BlockQuote quote="Conectamos o potencial e a competência de cada um de nós às necessidade e problemas dos nossos clientes." />
+          <BlockQuote
+            quote="Conectamos o potencial e a competência de cada um de nós às necessidade e problemas dos nossos clientes."
+            block-style="relative mt-10"
+            text-style="absolute top-custom left-custom text-gray"
+          />
         </div>
       </div>
     </div>
@@ -45,7 +49,12 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
       <div class="flex flex-row flex-wrap -mx-4">
         <div v-for="(gridItem, index) in grid" :key="index" class="w-full px-4 flex justify-center items-center" :class="gridItem.size">
           <Avatar v-if="gridItem.type === 'image'" :image="gridItem.image" :title="gridItem.title" />
-          <BlockQuote v-if="gridItem.type === 'blockquote'" :quote="gridItem.content" :class="gridItem.size" />
+          <BlockQuote
+            v-if="gridItem.type === 'blockquote'"
+            :quote="gridItem.content"
+            text-style="absolute top-custom left-custom text-gray"
+            block-style="relative w-full height-custom"
+          />
         </div>
       </div>
     </div>
