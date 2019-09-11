@@ -36,11 +36,15 @@ export default {
     videoClass: {
       type: String,
       default: ''
+    },
+    videoFile: {
+      type: String,
+      default: 'maxresdefault.jpg'
     }
   },
   computed: {
     thumbnail () {
-      return `https://img.youtube.com/vi/${this.videoId}/maxresdefault.jpg`
+      return `https://img.youtube.com/vi/${this.videoId}/${this.videoFile}`
     }
   }
 }

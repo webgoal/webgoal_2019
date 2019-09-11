@@ -25,13 +25,15 @@
     </div>
 
     <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 mt-24">
-      <div class="text-left pb-8 lg:text-right flex flex-col w-full pr-6 justify-center">
-        A região tinha potencial e poderíamos criar oportunidades de trabalho para que os profissionais de TI não precisassem ir para São Paulo. Buscávamos por mais qualidade de vida.</span>
-        Felizes, chegamos então no Sul de Minas para iniciar uma unidade da Webgoal no ano de 2011.
-      </div>
       <div class="flex flex-col w-full">
-        <div class="text-left">
+        <div class="text-right pb-8">
           <Title small-title="mas porque" title="Poços de Caldas" />
+        </div>
+        <div class="text-left pb-8 lg:text-right flex flex-col lg:flex-row w-full pr-6 justify-center lg:items-center">
+          <p class="pb-10 lg:pr-10 lg:pb-0">
+            A região tinha potencial e poderíamos criar oportunidades de trabalho para que os profissionais de TI não precisassem ir para São Paulo. Buscávamos por mais qualidade de vida.</span>
+            Felizes, chegamos então no Sul de Minas para iniciar uma unidade da Webgoal no ano de 2011.
+          </p>
           <img src="~/assets/images/wg_pc.png" alt="todos">
         </div>
       </div>

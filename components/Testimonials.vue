@@ -4,7 +4,7 @@
       <div class="swiper-button-prev" />
       <div class="swiper-wrapper pb-10">
         <div v-for="(slide, index) in slides" :key="index" class="swiper-slide">
-          <Video :url="slide.url" :video-id="slide.videoId" video-class="rounded" />
+          <Video :url="slide.url" :video-id="slide.videoId" :video-file="slide.videoFile" video-class="rounded" />
           <h1 class="text-lg md:text-2xl font-bold leading-none mt-3">
             {{ slide.name }}
           </h1>
@@ -100,18 +100,21 @@ export default {
           name: 'O início de tudo',
           position: 'por Matheus Haddad',
           videoId: 'unPQHIc0oW0',
+          videoFile: 'maxresdefault.jpg',
           url: 'https://www.youtube.com/watch?v=unPQHIc0oW0'
         },
         {
           name: 'Nossa cultura e estilo de gestão',
           position: 'por Matheus Haddad',
           videoId: 'KtPTslwCKQs',
+          videoFile: 'maxres3.jpg',
           url: 'https://www.youtube.com/watch?v=KtPTslwCKQs'
         },
         {
           name: 'O propósito do Ateliê de Software',
           position: 'Herbertt Bamonde',
           videoId: 'OyUn-ZCnzfk',
+          videoFile: 'maxresdefault.jpg',
           url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
         }
       ]
