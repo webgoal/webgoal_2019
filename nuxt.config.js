@@ -32,15 +32,17 @@ export default {
    */
   plugins: [
     { src: '@/plugins/vue-awesome-swiper.js', ssr: false },
-    '~plugins/vue-scrollto.js'
+    '~plugins/vue-scrollto.js',
+    { src: '@plugins/gtm.js', ssr: false },
+    { src: '@plugins/facebook.js', ssr: false }
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/axios'
+    // '@nuxtjs/eslint-module'
   ],
   /*
    ** Axios module configuration
