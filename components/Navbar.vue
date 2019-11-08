@@ -12,7 +12,6 @@
      <toggle-button
         :value="language"
         :labels="{ checked: 'en', unchecked: 'pt' }"
-        :sync="true"
         color="#27B8D7"
         class="mt-3"
         @change="changeLanguage"
