@@ -38,7 +38,7 @@ export default {
     '~plugins/vue-scrollto.js',
     { src: '@plugins/gtm.js', ssr: false },
     { src: '@plugins/facebook.js', ssr: false },
-    { src: '@plugins/toggle.js', ssr: false }
+    { src: '@plugins/toggle.js' }
   ],
   /*
    ** Nuxt.js modules
