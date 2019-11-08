@@ -12,6 +12,7 @@
      <toggle-button
         :value="language"
         :labels="{ checked: 'en', unchecked: 'pt' }"
+        :sync="true"
         color="#27B8D7"
         class="mt-3"
         @change="changeLanguage"
@@ -62,7 +63,7 @@ export default {
       return className
     },
     language() {
-      return this.$i18n.locale === 'en'
+      return this.$nuxt.$i18n.locale === 'en'
     }
   },
   methods: {
