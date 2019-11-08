@@ -4,11 +4,11 @@
     <div class="container">
       <div class="flex flex-col lg:flex-row lg:mx-40 lg:p-10">
         <div class="w-full">
-          <Title small-title="conheça nossa" title="EQUIPE" />
+          <Title :small-title="$t('experiencespage.smallTitle')" :title="$t('experiencespage.title')" />
         </div>
         <div class="w-full">
           <BlockQuote
-            quote="Conectamos o potencial e a competência de cada um de nós às necessidade e problemas dos nossos clientes."
+            :quote="$t('experiencespage.quote')"
             block-style="relative mt-10"
             text-style="absolute top-custom left-custom text-gray"
           />
@@ -22,24 +22,23 @@
           <IconCard
             :icon="require('~/assets/icons/hands.png')"
             icon-color="bg-lightBlue"
-            title="Colaboração"
-            content="Colaborar significa fazer o trabalho junto com outras pessoas para criar novos aprendizados, aumentar a resiliência da equipe e ter qualidade no resultado final. A colaboração estimula a troca de conhecimentos e é a base do trabalho em equipe."
+            :title="$t('experiencespage.collaboration.title')"
+            :content="$t('experiencespage.collaboration.content')"
           />
         </div>
         <div class="w-full lg:w-4/12 px-4">
           <IconCard
             :icon="require('~/assets/icons/business_man.png')"
-            title="Autonomia"
-            content="Ter autonomia significa fazer o trabalho que precisa ser feito da maneira que você acredita ser a melhor, considerando o impacto e as consequências dessa escolha na atuação das pessoas que trabalham com você, no nosso negócio e no negócio do cliente."
+            :title="$t('experiencespage.autonomy.title')"
+            :content="$t('experiencespage.autonomy.content')"
           />
         </div>
         <div class="w-full lg:w-4/12 px-4">
           <IconCard
             :icon="require('~/assets/icons/notepad.png')"
             icon-color="bg-darkBlue"
-            title="Transparência"
-            content="É a correspondência entre o que realmente queremos e o que demonstramos, entre o que desejamos e o que manifestamos no mundo real. Significa revelar com maior ou menor clareza as intenções, os sentimentos e os pensamentos ocultos por trás de uma ação. A transparência diminui a frustração, facilita a convivência com
-o outro, favorece a autonomia, a colaboração e a auto-organização."
+            :title="$t('experiencespage.transparency.title')"
+            :content="$t('experiencespage.transparency.content')"
           />
         </div>
       </div>
@@ -66,10 +65,10 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
         </div>
         <div class="w-full md:w-6/12 px-4 flex flex-col justify-center">
           <h2 class="text-5xl font-black font-serif">
-            Experiências
+            {{ $t('experiencespage.experiences.title') }}
           </h2>
           <p>
-            Desde o início tomamos iniciativas inovadoras que favorecem o desempenho dos nossos trabalhadores. Employee experience é o conjunto de esforços para criar uma vivência significativa de trabalho para os colaboradores. Acreditamos que colaboramos para o crescimento profissional das pessoas e as mesmas colaboram para o crescimento das empresas.
+            {{ $t('experiencespage.experiences.text') }}
           </p>
         </div>
       </div>
@@ -78,16 +77,16 @@ o outro, favorece a autonomia, a colaboração e a auto-organização."
     <div class="container">
       <div class="flex flex-col items-center text-center mt-20 mb-16">
         <h3 class="font-black text-2xl mb-2">
-          Divida suas experiências com a gente
+          {{ $t('experiencespage.share.title') }}
         </h3>
         <p class="font-lg">
-          trabalhe em uma das empresas do grupo
+          {{ $t('experiencespage.share.work') }}
         </p>
       </div>
     </div>
 
     <Companies
-      name-button="conheça as vagas"
+      :name-button="$t('experiencespage.companies.button.text')"
       class="mt-24 mb-24"
       :urls="[
         'https://www.granatum.com.br/financeiro/vagas/',
@@ -163,12 +162,6 @@ export default {
           type: 'image',
           title: 'Davi',
           image: require('~/assets/images/people/davi.png'),
-          size: 'md:w-3/12'
-        },
-        {
-          type: 'image',
-          title: 'Daniel Oshiro',
-          image: require('~/assets/images/people/dobrado.png'),
           size: 'md:w-3/12'
         },
         {

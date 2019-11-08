@@ -4,7 +4,7 @@
   >
     <Logo height="200" width="300" />
     <p class="font-serif leading-none text-white text-4xl max-w-xs">
-      Sustentamos negócios disruptivos que transformam a vida das pessoas.
+      {{ $t('hero.text') }}
     </p>
   </div>
 </template>

@@ -4,17 +4,19 @@
       <div class="px-2 ">
         <BlogCard
           :image-url="require('~/assets/images/atelie_home.jpg')"
-          title="Ateliê de Software"
-          content="Criamos soluções digitais para grandes empresas e startups, desenvolvendo software sob medida, utilizando métodos ágeis e aplicando técnicas avançadas de product discovery."
+          :title="$t('homepage.blogSection.atelie.title')"
+          :content="$t('homepage.blogSection.atelie.content')"
           link="https://atelie.software/"
+          :button-text="$t('homepage.button.text')"
         />
       </div>
       <div class="px-2">
         <BlogCard
           :image-url="require('~/assets/images/lumiar_home.jpg')"
-          title="Escola Lumiar Poços de Caldas"
-          content="Considerada umas das escolas mais inovadoras do mundo por utilizar uma metodologia de ensino-aprendizagem baseada no desenvolvimento de habilidades e competências a partir de projetos e grupos multietários."
+          :title="$t('homepage.blogSection.lumiar.title')"
+          :content="$t('homepage.blogSection.lumiar.content')"
           link="https://www.escolalumiarpocos.com.br/"
+          :button-text="$t('homepage.button.text')"
         />
       </div>
     </div>
@@ -22,17 +24,19 @@
       <div class="px-2">
         <BlogCard
           :image-url="require('~/assets/images/granatum_home.jpg')"
-          title="Granatum Controle Financeiro"
-          content="Serviço online de gestão financeira sem complicação que proporciona inteligência financeira para empresas e startups."
+          :title="$t('homepage.blogSection.granatum.title')"
+          :content="$t('homepage.blogSection.granatum.content')"
           link="https://www.granatum.com.br/"
+          :button-text="$t('homepage.button.text')"
         />
       </div>
       <div class="px-2">
         <BlogCard
           :image-url="require('~/assets/images/floz_home.jpg')"
-          title="Floz Autosserviço"
-          content="Startup de autosserviço para servir chopp e conectar pessoas, fazendo a gestão do estoque e também dos pagamentos."
+          :title="$t('homepage.blogSection.floz.title')"
+          :content="$t('homepage.blogSection.floz.content')"
           link="https://www.floz.com.br/"
+          :button-text="$t('homepage.button.text')"
         />
       </div>
     </div>

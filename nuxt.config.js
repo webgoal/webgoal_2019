@@ -1,3 +1,6 @@
+const en = require('./locales/en')
+const pt = require('./locales/pt')
+
 export default {
   mode: 'universal',
   /*
@@ -34,15 +37,33 @@ export default {
     { src: '@/plugins/vue-awesome-swiper.js', ssr: false },
     '~plugins/vue-scrollto.js',
     { src: '@plugins/gtm.js', ssr: false },
-    { src: '@plugins/facebook.js', ssr: false }
+    { src: '@plugins/facebook.js', ssr: false },
+    { src: '@plugins/toggle.js', ssr: false }
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
     // '@nuxtjs/eslint-module'
+    [
+      'nuxt-i18n',
+      {
+        locales: [{ code: 'en', iso: 'en-US' }, { code: 'pt', iso: 'pt-BR' }],
+        defaultLocale: 'pt',
+        detectBrowserLanguage: {
+          useCookie: true
+        },
+        vueI18n: {
+          fallbackLocale: 'pt',
+          messages: {
+            en,
+            pt
+          }
+        }
+      }
+    ]
   ],
   /*
    ** Axios module configuration

@@ -8,36 +8,35 @@
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
-          <Title small-title="nossa" title="HISTÓRIA" />
-          <CardContent content="Começar é sempre mais difícil! E a mudança é uma voz que grita dentro de nós e precisamos ter coragem para ouví-la." />
+          <Title :small-title="$t('history.smallTitle')" :title="$t('history.title')" />
+          <CardContent :content="$t('history.content')" />
         </div>
       </div>
     </div>
 
     <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 items-center mt-24">
       <div class="flex flex-col w-full pr-6">
-        <span class="text-left lg:text-right text-4xl font-bold">Antes, um grupo de amigos. Hoje, um grupo de empresas.</span>
+        <span class="text-left lg:text-right text-4xl font-bold">{{ $t('history.subTitle') }}</span>
       </div>
       <div class="flex flex-col w-full">
         <BlockQuote
           class="text-left"
-          quote="Porque estou acordando toda manhã para ir trabalhar? O que me motiva? Um propósito muito maior do que apenas desenvolver software, queremos melhorar a vida dos clientes, não somente corrigir erros."
+          :quote="$t('history.quote')"
           block-style="relative -mt-16"
           text-style="absolute top-custom left-custom text-gray"
         />
       </div>
-      <Button text="Saiba Mais" url="https://share.atelie.software/antes-um-grupo-de-amigos-hoje-um-grupo-de-empresas-ffbee3334a1a" />
+      <Button :text="$t('history.button.text')" url="https://share.atelie.software/antes-um-grupo-de-amigos-hoje-um-grupo-de-empresas-ffbee3334a1a" />
     </div>
 
     <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 mt-24">
       <div class="flex flex-col w-full">
         <div class="text-right pb-8">
-          <Title small-title="mas porque" title="Poços de Caldas" />
+          <Title :small-title="$t('history.pocos.smallTitle')" :title="$t('history.pocos.title')" />
         </div>
         <div class="text-left pb-8 lg:text-right flex flex-col lg:flex-row w-full pr-6 justify-center lg:items-center">
           <p class="pb-10 lg:pr-10 lg:pb-0">
-            A região tinha potencial e poderíamos criar oportunidades de trabalho para que os profissionais de TI não precisassem ir para São Paulo. Buscávamos por mais qualidade de vida.</span>
-            Felizes, chegamos então no Sul de Minas para iniciar uma unidade da Webgoal no ano de 2011.
+            {{ $t('history.pocos.text') }}
           </p>
           <img src="~/assets/images/wg_pc.png" alt="todos">
         </div>
@@ -45,17 +44,17 @@
     </div>
 
     <div class="container flex flex-col py-10 mt-24">
-      <Title small-title="surge o" title="Granatum" />
-      <CardContent content="Outro momento decisivo para nós foi o surgimento do Granatum Pessoal em 2009. Essa ferramenta gratuita era um controle financeiro online baseado no Webgoal Finanças, um software interno que criamos para fazer a gestão financeira da nossa empresa." />
+      <Title :small-title="$t('history.granatum.smallTitle')" :title="$t('history.granatum.title')" />
+      <CardContent :content="$t('history.granatum.content')" />
     </div>
 
     <div class="container flex lg:flex-row sm:flex-col-reverse flex-col py-10 items-center mt-24">
       <div class="flex flex-col w-full pr-6 text-left lg:text-right">
-        <span>Decidimos ampliar o negócio de desenvolvimento de software sob medida, criando a marca Ateliê de Software. O nosso crescimento exigiu algumas mudanças. Tínhamos uma única pessoa jurídica, mas duas unidades de negócio bem distintas: Ateliê de Software e Granatum.</span>
+        <span>{{ $t('history.atelie.content') }}</span>
       </div>
       <div class="flex flex-col w-full">
         <div class="text-left">
-          <Title small-title="nasce o" title="Ateliê" />
+          <Title :small-title="$t('history.atelie.smallTitle')" :title="$t('history.atelie.title')" />
         </div>
       </div>
     </div>

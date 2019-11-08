@@ -3,11 +3,11 @@
     <Header dark :absolute="false" />
     <div class="flex flex-col items-center container">
       <div class="sm:mx-auto">
-        <Title small-title="nossos" title="NEGÓCIOS" />
+        <Title :small-title="$t('businesspage.smallTitle')" :title="$t('businesspage.title')" />
       </div>
       <div class="w-auto lg:w-2/5 text-xl lg:ml-64">
         <BlockQuote
-          quote="A Webgoal sustenta negócios inovadores com estilo de gestão próprio baseado na experiência, autonomia e responsabilidade."
+          :quote="$t('businesspage.quote')"
           block-style="relative mt-10"
           text-style="lg:absolute top-custom left-custom text-gray"
         />
@@ -20,7 +20,7 @@
     <Lumiar class="container mt-24" link="https://www.escolalumiarpocos.com.br/" />
     <Companies
       class="container mt-24 mb-24"
-      name-button="entre em contato"
+      :name-button="$t('businesspage.companies.button.text')"
       :urls="[
         'https://www.granatum.com.br/financeiro/',
         'https://atelie.software/#contato',

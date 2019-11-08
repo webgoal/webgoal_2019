@@ -3,12 +3,19 @@
     <nuxt-link
       v-for="link in navbarList"
       :key="link.name"
-      :to="link.url"
+      :to="localePath(link.page)"
       class="p-1 md:px-4 md:p-3"
-      :class="`${colorClass} ${active(link.url)}`"
+      :class="`${colorClass} ${active(link.page)}`"
     >
-      {{ link.name }}
+      {{ $t(link.name) }}
     </nuxt-link>
+     <toggle-button
+        :value="language"
+        :labels="{ checked: 'en', unchecked: 'pt' }"
+        color="#27B8D7"
+        class="mt-3"
+        @change="changeLanguage"
+      />
   </nav>
 </template>
 
@@ -30,19 +37,19 @@ export default {
       navbarList: [
         {
           name: 'Home',
-          url: '/'
+          page: 'index'
         },
         {
-          name: 'Negócios',
-          url: '/negocios'
+          name: 'header.business',
+          page: 'negocios'
         },
         {
-          name: 'Experiências',
-          url: '/equipe'
+          name: 'header.experiences',
+          page: 'equipe'
         },
         {
-          name: 'História',
-          url: '/historia'
+          name: 'header.history',
+          page: 'historia'
         }
       ]
     }
@@ -53,17 +60,32 @@ export default {
       let className = 'text-white border-white'
       if (dark) { className = 'text-black border-blue' }
       return className
+    },
+    language() {
+      return this.$i18n.locale === 'en'
     }
   },
   methods: {
     active (route) {
-      if (route === this.$nuxt.$route.path && route === '/') {
+      const name = this.removeLanguageOfName(this.$nuxt.$route.name)
+      if (route === name && route === 'index') {
         return 'home-active'
-      } else if (route === this.$nuxt.$route.path) {
+      } else if (route === name) {
         return 'active-link'
       } else {
         return ''
       }
+    },
+    removeLanguageOfName(name) {
+      if(name.substr(-2) === 'pt'){
+        return name.replace('___pt', '')
+      } else {
+        return name.replace('___en', '')
+      }
+    },
+    changeLanguage(value) {
+      const language = value.value ? 'en' : 'pt'
+      this.$nuxt.$router.push(this.switchLocalePath(language))
     }
   }
 }

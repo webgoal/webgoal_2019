@@ -5,7 +5,7 @@
         <Logo height="80" width="150" />
       </div>
       <p class="self-center text-white">
-        Todos os direitos reservados Webgoal 2019&copy;
+        {{ $t('footer.title') }}&copy;
       </p>
       <div class="flex flex-row">
         <a

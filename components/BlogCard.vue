@@ -12,7 +12,7 @@
       </p>
     </div>
     <footer class="mt-12 -mb-5 flex justify-center">
-      <Button :url="link" target="_blank" />
+      <Button :url="link" :text="buttonText" target="_blank" />
     </footer>
   </div>
 </template>
@@ -44,6 +44,10 @@ export default {
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem numquam similique atque cumque eius, explicabo exercitationem saepe, nesciunt quis omnis laudantium autem veniam, ratione dignissimos qui impedit. Praesentium, doloribus doloremque!'
     },
     link: {
+      type: String,
+      default: ''
+    },
+    buttonText: {
       type: String,
       default: ''
     }

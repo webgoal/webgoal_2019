@@ -97,22 +97,22 @@ export default {
       },
       slides: [
         {
-          name: 'O início de tudo',
-          position: 'por Matheus Haddad',
+          name: this.$t('homepage.depositions.slideOne.name'),
+          position: this.$t('homepage.depositions.slideOne.position'),
           videoId: 'unPQHIc0oW0',
           videoFile: 'maxresdefault.jpg',
           url: 'https://www.youtube.com/watch?v=unPQHIc0oW0'
         },
         {
-          name: 'Nossa cultura e estilo de gestão',
-          position: 'por Matheus Haddad',
+          name: this.$t('homepage.depositions.slideTwo.name'),
+          position: this.$t('homepage.depositions.slideTwo.position'),
           videoId: 'KtPTslwCKQs',
           videoFile: 'maxres3.jpg',
           url: 'https://www.youtube.com/watch?v=KtPTslwCKQs'
         },
         {
-          name: 'O propósito do Ateliê de Software',
-          position: 'Herbertt Bamonde',
+          name: this.$t('homepage.depositions.slideThree.name'),
+          position: this.$t('homepage.depositions.slideThree.position'),
           videoId: 'OyUn-ZCnzfk',
           videoFile: 'maxresdefault.jpg',
           url: 'https://www.youtube.com/watch?v=OyUn-ZCnzfk'
