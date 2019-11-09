@@ -2,7 +2,7 @@ const en = require('./locales/en')
 const pt = require('./locales/pt')
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
@@ -38,7 +38,7 @@ export default {
     '~plugins/vue-scrollto.js',
     { src: '@plugins/gtm.js', ssr: false },
     { src: '@plugins/facebook.js', ssr: false },
-    { src: '~plugins/toggle.js', ssr: false }
+    { src: '@plugins/toggle.js', ssr: false }
   ],
   /*
    ** Nuxt.js modules
