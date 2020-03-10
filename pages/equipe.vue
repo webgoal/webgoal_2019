@@ -129,12 +129,6 @@ export default {
         },
         {
           type: 'image',
-          title: 'Bruno',
-          image: require('~/assets/images/people/bruno.png'),
-          size: 'md:w-3/12'
-        },
-        {
-          type: 'image',
           title: 'Cainã',
           image: require('~/assets/images/people/caina.png'),
           size: 'md:w-3/12'
@@ -232,12 +226,6 @@ export default {
         },
         {
           type: 'image',
-          title: 'Leonardo Neves',
-          image: require('~/assets/images/people/leo.png'),
-          size: 'md:w-3/12'
-        },
-        {
-          type: 'image',
           title: 'Lucas Azevedo',
           image: require('~/assets/images/people/lucasazevedo.png'),
           size: 'md:w-3/12'
@@ -264,12 +252,6 @@ export default {
           type: 'image',
           title: 'Matheus',
           image: require('~/assets/images/people/matheushaddad.png'),
-          size: 'md:w-3/12'
-        },
-        {
-          type: 'image',
-          title: 'Miguel',
-          image: require('~/assets/images/people/miguel.png'),
           size: 'md:w-3/12'
         },
         {
@@ -321,28 +303,20 @@ export default {
           size: 'md:w-3/12'
         },
         {
-          type: 'image',
-          title: 'Washington',
-          image: require('~/assets/images/people/tom.png'),
-          size: 'md:w-3/12'
+          type: 'blockquote',
+          content: '"Primeiro, resolva o problema. Em seguida, escreva o código." - Mateus Andrade (Ateliê de Software)',
+          size: 'md:w-6/12'
         },
-
         {
           type: 'image',
-          title: 'Valter',
-          image: require('~/assets/images/people/valter.png'),
+          title: 'Tom',
+          image: require('~/assets/images/people/tom.png'),
           size: 'md:w-3/12'
         },
         {
           type: 'image',
           title: 'Wallison',
           image: require('~/assets/images/people/wallison.png'),
-          size: 'md:w-3/12'
-        },
-        {
-          type: 'image',
-          title: 'William',
-          image: require('~/assets/images/people/will.png'),
           size: 'md:w-3/12'
         }
       ]

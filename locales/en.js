@@ -151,7 +151,7 @@ const en = {
     }
   },
   footer: {
-    title: 'All Rights Reserved Webgoal 2019'
+    title: 'All Rights Reserved Webgoal 2020'
   }
 }
 
